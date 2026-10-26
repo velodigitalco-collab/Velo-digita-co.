@@ -1,125 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Velo Digital - Built by Beasty</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
-
-<!-- POPPINS + SIMILAR FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Syne:wght@800&display=swap" rel="stylesheet">
 <style>
   html.lenis, html.lenis body { height: auto; }
   .lenis.lenis-smooth { scroll-behavior: auto !important; }
-  /* POPPINS MAIN FONT */
-  body{font-family:'Poppins', 'Inter', sans-serif;background:#050505;color:white;overflow-x:hidden;letter-spacing:-0.01em}
-  h1,h2,h3{font-family:'Poppins', sans-serif;font-weight:800;letter-spacing:-0.03em}
-  .syne{font-family:'Syne', sans-serif}
+  body{font-family:'Poppins',sans-serif;background:#050505;color:#fff;overflow-x:hidden}
   .gold-grad{background:linear-gradient(135deg,#D4AF37 0%,#FFD700 50%,#D4AF37 100%)}
   .gold-text{color:#E8C765}
   .glass{background:rgba(255,255,255,0.04);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08)}
   .reveal{opacity:0;transform:translateY(80px)}
+  .syne{font-family:'Syne',sans-serif}
 </style>
 </head>
 <body>
-
-<div id="cursor" class="hidden md:block fixed w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(232,199,101,0.12)_0%,transparent_70%)] pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2"></div>
+<div id="cursor" class="hidden md:block fixed w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(232,199,101,0.12)_0%,transparent_70%)] pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2"></div>
 
 <nav class="fixed top-0 w-full z-40 glass">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-black tracking-tighter"><span class="gold-text">VELO</span> DIGITAL</h1>
-    <a href="https://wa.me/917020674916" class="gold-grad text-black px-5 py-2 rounded-full font-bold text-sm" style="font-family:'Poppins'">Let's Talk</a>
+    <h1 class="text-xl font-black tracking-tighter syne"><span class="gold-text">VELO</span> DIGITAL</h1>
+    <div class="flex items-center gap-3">
+      <span class="hidden md:block text-[10px] tracking-[0.2em] text-zinc-500">BY BEASTY</span>
+      <a href="https://wa.me/917020674916" class="gold-grad text-black px-6 py-2.5 rounded-full font-bold text-[12px] tracking-wide hover:scale-105 transition">Let's Talk →</a>
+    </div>
   </div>
 </nav>
 
-<section class="min-h-screen pt-32 px-6 max-w-7xl mx-auto flex flex-col justify-center">
-  <h1 class="text-[11vw] md:text-[7.5rem] font-black leading-[0.85] tracking-[-0.05em]">
-    <div class="overflow-hidden"><span class="hero-t block">WE BUILD</span></div>
-    <div class="overflow-hidden"><span class="hero-t block gold-text">KDK SITES</span></div>
-    <div class="overflow-hidden"><span class="hero-t block">THAT SELL.</span></div>
-  </h1>
-  <p class="reveal mt-8 text-zinc-400 max-w-lg text-[15px] font-[400] leading-relaxed" style="font-family:'Poppins'">Fashion, Gaming, Business - Jo brand asel, tyala premium look deu. Poppins font madhe ekdum clean diste.</p>
-</section>
-
-<!-- CRAZYY QUOTE -->
-
-<section class="min-h-screen pt-32 px-6 max-w-7xl mx-auto flex flex-col justify-center">
-  <h1 class="text-[11vw] md:text-[7.5rem] font-black leading-[0.85] tracking-[-0.05em]">
-    <div class="overflow-hidden"><span class="hero-t block">WE BUILD</span></div>
-    <div class="overflow-hidden"><span class="hero-t block gold-text">KDK SITES</span></div>
-    <div class="overflow-hidden"><span class="hero-t block">THAT SELL.</span></div>
-  </h1>
-  <div class="reveal mt-12 max-w-[560px]">
-    <div class="flex gap-5">
-      <div class="w-[2px] bg-gradient-to-b from-[#E8C765] via-[#E8C765]/50 to-transparent shrink-0"></div>
-      <div class="space-y-6">
-        <div>
-          <p class="text-[22px] md:text-[26px] font-[500] leading-[1.25] tracking-[-0.02em] text-white" style="font-family:'Poppins'">
+<!-- HERO WITH 2 PROFESSIONAL QUOTES -->
+<section class="min-h-[90vh] pt-32 px-6 max-w-7xl mx-auto flex flex-col justify-center">
+  <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
+    <div class="flex-1">
+      <h1 class="text-[13vw] md:text-[8rem] font-black leading-[0.8] tracking-[-0.06em] syne">
+        <div class="overflow-hidden"><span class="hero-t block">WE BUILD</span></div>
+        <div class="overflow-hidden"><span class="hero-t block gold-text">KDK SITES</span></div>
+        <div class="overflow-hidden"><span class="hero-t block">THAT SELL.</span></div>
+      </h1>
+      <div class="mt-8 flex gap-3">
+        <a href="#work" class="glass px-6 py-3 rounded-full text-sm font-medium hover:bg-white/10 transition">View Work</a>
+        <a href="https://wa.me/917020674916" class="gold-grad text-black px-6 py-3 rounded-full text-sm font-bold">Start Project</a>
+      </div>
+    </div>
+    
+    <div class="reveal max-w-[520px] lg:mb-8">
+      <div class="flex gap-5">
+        <div class="w-[2px] bg-gradient-to-b from-[#E8C765] via-[#E8C765]/30 to-transparent shrink-0"></div>
+        <div class="space-y-5">
+          <p class="text-[22px] md:text-[25px] font-medium leading-[1.25] tracking-[-0.02em]">
             A premium website is not an expense.<br>
             <span class="font-light text-zinc-400">It's your best-performing sales asset.</span>
           </p>
-        </div>
-        <div class="w-12 h-[1px] bg-white/10"></div>
-        <div>
-          <p class="text-[14px] md:text-[15px] font-[400] leading-[1.5] tracking-wide text-zinc-400" style="font-family:'Poppins'">
-            Design builds trust. Trust builds business. We focus on both.
+          <div class="w-12 h-[1px] bg-white/10"></div>
+          <p class="text-[14px] leading-[1.6] tracking-wide text-zinc-400">
+            Design builds trust. Trust builds business.<br>We focus on both.
           </p>
-        </div>
-        <div class="flex items-center gap-3 pt-2">
-          <div class="w-8 h-8 rounded-full gold-grad flex items-center justify-center text-black font-black text-[11px]">B</div>
-          <div>
-            <p class="text-[12px] font-bold tracking-[0.2em] text-white">BEASTY</p>
-            <p class="text-[10px] tracking-[0.15em] text-zinc-500 -mt-0.5">FOUNDER, VELO DIGITAL</p>
+          <div class="flex items-center gap-3 pt-2">
+            <div class="w-9 h-9 rounded-full gold-grad flex items-center justify-center text-black font-black text-[12px]">B</div>
+            <div>
+              <p class="text-[12px] font-bold tracking-[0.2em]">BEASTY</p>
+              <p class="text-[10px] tracking-[0.15em] text-zinc-500 -mt-0.5">FOUNDER, VELO DIGITAL</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- FOOTER - BEASTY -->
-<section class="relative bg-[#080808] border-t border-zinc-900 mt-10 overflow-hidden">
-  <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 50px 50px;"></div>
-  <div class="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none"><h1 class="text-[22vw] font-black leading-none text-white/[0.03] tracking-tighter" style="font-family:'Poppins'">VELO</h1></div>
-  <div class="relative max-w-4xl mx-auto px-6 py-24 text-center">
-    <h2 class="text-6xl md:text-8xl font-black leading-[0.85] tracking-tighter" style="font-family:'Poppins'">
-      <span class="block reveal text-white">Ready to</span>
-      <span class="block reveal text-white/40 font-light">begin?</span>
-    </h2>
-    <div class="mt-12 flex flex-col gap-4 max-w-[340px] mx-auto">
-      <a href="https://wa.me/917020674916" class="reveal glass rounded-full py-4 flex justify-center gap-2 hover:bg-white/10 transition-all"><span>💬</span><span class="font-semibold text-sm">WhatsApp - 7020674916</span></a>
-      <a href="#" class="reveal glass rounded-full py-4 flex justify-center gap-2 hover:bg-white/10 transition-all"><span>🚀</span><span class="font-semibold text-sm">Explore Work</span></a>
-    </div>
-    <div class="mt-10 flex flex-wrap justify-center gap-3">
-      <span class="reveal glass rounded-full px-5 py-2 text-xs text-zinc-400">Privacy Policy</span>
-      <span class="reveal glass rounded-full px-5 py-2 text-xs text-zinc-400">Terms</span>
-      <div class="reveal glass rounded-full px-5 py-2 text-xs flex gap-2 items-center">
-        <span class="text-zinc-500 text-[10px] tracking-widest">CRAFTED WITH ❤ BY</span>
-        <span class="text-white font-black tracking-wider">Beasty</span>
-      </div>
-    </div>
-  </div>
-</section>
 
-<script>
-const lenis = new Lenis({ duration: 1.5, smoothWheel: true });
-function raf(time){ lenis.raf(time); requestAnimationFrame(raf); }
-requestAnimationFrame(raf);
-gsap.registerPlugin(ScrollTrigger);
-lenis.on('scroll', ScrollTrigger.update);
-gsap.ticker.add((time)=>{ lenis.raf(time * 1000); });
-gsap.from(".hero-t",{y:120, duration:1.4, stagger:0.12, ease:"power4.out", delay:0.3});
-gsap.utils.toArray(".reveal").forEach(el=>{
-  gsap.to(el,{y:0, opacity:1, duration:1, ease:"power3.out", scrollTrigger:{trigger:el, start:"top 88%"}})
-});
-gsap.utils.toArray(".quote-t").forEach(el=>{
-  gsap.from(el,{y:80, duration:1.2, ease:"power4.out", scrollTrigger:{trigger:el, start:"top 85%"}})
-});
-document.addEventListener("mousemove",e=>{
-  gsap.to("#cursor",{x:e.clientX, y:e.clientY, duration:1, ease:"power3.out"})
-});
-</script>
-</body>
-</html>
+<!-- PROJECTS -->
+<section id="work" class="px-6 max-w-7xl mx-auto py-16">
+  <div class="flex justify-between items-end mb-10">
+    <h2 class="reveal text-4xl md:text-6xl font-black tracking-tighter">SELECTED<br><span class="text-white/30 font-light">WORK (03)</span></h2>
+    <p class="reveal hidden md:block text-sm text-zinc-500 max-w-[260px]">Real brands, real results. All built for performance
