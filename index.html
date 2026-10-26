@@ -3,107 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Velo Digital - Premium Digital Solutions</title>
+<title>Velo Digital | Premium Digital Agency</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-    * { font-family: 'Plus Jakarta Sans', sans-serif; -webkit-font-smoothing: antialiased; }
-  body { background: #0A0A0A; color: white; overflow-x: hidden; }
-  
-  .glass-pill {
-    background: linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
-    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.1), inset 0 -1px 2px rgba(0,0,0,0.8);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(16px);
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .glass-pill:hover {
-    background: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.04) 100%);
-    border-color: rgba(255,255,255,0.2);
-    transform: scale(1.03);
-    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.7);
-  }
-  .bg-grid {
-    background-size: 60px 60px;
-    background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
-    mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
-  }
-  .text-glow {
-    background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.4) 100%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0px 0px 20px rgba(255,255,255,0.15));
-  }
-  .giant-text {
-    font-size: 26vw; line-height: 0.75; font-weight: 900; letter-spacing: -0.05em;
-    color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.05);
-    background: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, transparent 60%);
-    -webkit-background-clip: text;
-  }
-  @keyframes heartbeat {
-    0%,100% { transform: scale(1); } 15%,45% { transform: scale(1.2); } 30% { transform: scale(1); }
-  }
-  .heartbeat { animation: heartbeat 2s infinite; }
+*{font-family:'Plus Jakarta Sans',sans-serif}
+body{background:#0A0A0A;color:#fff;overflow-x:hidden}
+.glass{background:linear-gradient(145deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(20px)}
+.glass:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2)}
+.giant{font-size:28vw;line-height:0.7;font-weight:900;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,0.04)}
 </style>
 </head>
 <body>
 
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 bg-black/50 backdrop-blur-xl border-b border-white/5">
+  <h2 class="font-black text-xl tracking-tighter">VELO DIGITAL</h2>
+  <a href="https://wa.me/917020674916?text=Hi%20Velo%20Digital%20Team!" class="bg-white text-black px-6 py-3 rounded-full font-bold text-xs">WHATSAPP: 7020674916</a>
+</nav>
+
 <!-- HERO -->
-<section class="relative z-10 min-h-[90vh] flex flex-col items-center justify-center px-6 bg-[#0A0A0A] border-b border-white/10 rounded-b-[2rem]">
-  <div class="absolute inset-0 bg-grid pointer-events-none"></div>
-  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[60vh] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.08)_0%,transparent_70%)] blur-[80px] pointer-events-none"></div>
-  
-  <p class="text-[11px] tracking-[0.3em] text-white/40 uppercase font-bold mb-6">Velo Digital Co.</p>
-  <h1 class="text-5xl md:text-8xl font-black tracking-tighter text-center leading-[0.9]">We Build <br><span class="text-glow">Digital Hotels</span></h1>
-  <p class="mt-6 text-white/50 text-sm md:text-base max-w-md text-center">Premium websites for hotels, villas & resorts that convert visitors into bookings.</p>
-  
-  <div class="mt-10 flex flex-wrap justify-center gap-4">
-    <a href="#work" class="glass-pill px-10 py-5 rounded-full font-bold text-sm flex items-center gap-3">View Our Work</a>
-    <a href="https://wa.me/917030942200" class="bg-white text-black px-10 py-5 rounded-full font-bold text-sm hover:scale-105 transition">Let's Talk →</a>
+<section class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20">
+  <div class="glass px-4 py-2 rounded-full text-[10px] tracking-[0.3em] text-white/50 mb-8">PREMIUM DIGITAL SOLUTIONS • PUNE</div>
+  <h1 class="text-[14vw] md:text-[9vw] font-black leading-[0.85] tracking-tighter">We Build<br><span class="text-white/30">Digital Empire</span></h1>
+  <p class="text-white/40 max-w-xl mt-6 text-sm md:text-base">Hotels, Brands & Businesses sathi high-converting websites banavto. 7 divsat delivery.</p>
+  <div class="flex gap-4 mt-10 flex-wrap justify-center">
+    <a href="https://wa.me/917020674916?text=Mala%20Website%20Banvaychi%20Aahe" class="bg-white text-black px-10 py-5 rounded-full font-bold">Start Project →</a>
+    <a href="#work" class="glass px-10 py-5 rounded-full font-bold">Our Work</a>
   </div>
 </section>
 
-<!-- FOOTER - SAME AS YOUR SCREENSHOT -->
-<div class="relative h-[100vh] w-full" style="clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%)">
-<footer class="fixed bottom-0 left-0 h-[100vh] w-full flex flex-col justify-between overflow-hidden bg-[#0A0A0A]">
-  <div class="bg-grid absolute inset-0 pointer-events-none"></div>
-  <div class="absolute -bottom-[5vh] left-1/2 -translate-x-1/2 giant-text pointer-events-none select-none">VELO</div>
-
-  <div class="relative z-10 flex flex-1 flex-col items-center justify-center px-6 mt-10 w-full max-w-5xl mx-auto">
-    <h2 class="text-[12vw] md:text-[8vw] font-black tracking-tighter leading-[0.9] text-center">
-      <span class="text-white">Ready to</span><br>
-      <span class="text-white/40">begin?</span>
-    </h2>
-
-    <div class="flex flex-col items-center gap-4 w-full mt-12">
-      <div class="flex flex-col md:flex-row gap-4 w-full max-w-[380px]">
-        <a href="#" class="glass-pill w-full px-8 py-5 rounded-full font-bold text-[15px] flex items-center justify-center gap-3">
-          <span class="text-xl">🏨</span> View Live Demo
-        </a>
-        <a href="#" class="glass-pill w-full px-8 py-5 rounded-full font-bold text-[15px] flex items-center justify-center gap-3">
-          <span class="text-xl">📱</span> Our Projects
-        </a>
-      </div>
-
-      <div class="flex flex-wrap justify-center gap-3 mt-4">
-        <a href="#" class="glass-pill px-6 py-3 rounded-full text-white/60 text-[13px] font-medium">Privacy Policy</a>
-        <a href="#" class="glass-pill px-6 py-3 rounded-full text-white/60 text-[13px] font-medium">Terms of Service</a>
-        <a href="#" class="glass-pill px-6 py-3 rounded-full text-white/60 text-[13px] font-medium">Support</a>
-      </div>
-
-      <div class="glass-pill px-6 py-3 rounded-full flex items-center gap-2 mt-2">
-        <span class="text-white/50 text-[11px] font-bold tracking-widest uppercase">Crafted with</span>
-        <span class="heartbeat text-red-500 text-sm">❤</span>
-        <span class="text-white/50 text-[11px] font-bold tracking-widest uppercase">by</span>
-        <span class="text-white font-black text-[13px] ml-1">Velo Digital</span>
-      </div>
-    </div>
+<!-- WORK -->
+<section id="work" class="px-6 md:px-12 py-24">
+  <h3 class="text-4xl md:text-6xl font-black tracking-tighter mb-12">Selected Work</h3>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="glass rounded-[2rem] p-8 h-[350px] flex flex-col justify-end"><span class="text-white/30 text-xs">01 • HOTEL WEBSITE</span><h4 class="text-3xl font-bold mt-2">Luxury Hotel Booking System</h4></div>
+    <div class="glass rounded-[2rem] p-8 h-[350px] flex flex-col justify-end bg-white/[0.04]"><span class="text-white/30 text-xs">02 • BRAND WEBSITE</span><h4 class="text-3xl font-bold mt-2">Premium E-Commerce Store</h4></div>
+    <div class="glass rounded-[2rem] p-8 h-[350px] flex flex-col justify-end"><span class="text-white/30 text-xs">03 • BUSINESS WEBSITE</span><h4 class="text-3xl font-bold mt-2">Corporate Business Site</h4></div>
+    <div class="glass rounded-[2rem] p-8 h-[350px] flex flex-col justify-end bg-white text-black"><span class="text-black/40 text-xs">04 • LET'S BUILD YOURS</span><h4 class="text-3xl font-bold mt-2">Your Project Next?</h4><a href="https://wa.me/917020674916" class="mt-4 inline-block border border-black/20 px-6 py-3 rounded-full text-sm font-bold">Chat on WhatsApp</a></div>
   </div>
+</section>
 
-  <div class="relative z-20 w-full pb-8 px-6 flex justify-center">
-    <p class="text-white/30 text-[10px] tracking-widest uppercase font-semibold">© 2026 Velo Digital. All rights reserved.</p>
-  </div>
-</footer>
-</div>
+<!-- CONTACT -->
+<section class="min-h-[90vh] flex flex-col items-center justify-center px-6 text-center relative overflow-hidden border-t border-white/5">
+  <div class="absolute bottom-0 giant select-none pointer-events-none">VELO</div>
+  <h2 class="text-[15vw] md:text-[8vw] font-black tracking-tighter leading-[0.9] relative z-10">Ready to<br>begin?</h2>
+  <p class="text-white/40 mt-4 relative z-10">Direct WhatsApp kara - Instant reply</p>
+  <a href="https://wa.me/917020674916?text=Hi,%20Mala%20Velo%20Digital%20kade%20website%20banvaychi%20aahe" class="bg-white text-black mt-8 px-12 py-5 rounded-full font-black text-lg relative z-10">7020674916 - WhatsApp Now →</a>
+  <p class="mt-24 text-white/20 text-[10px] tracking-[0.3em] uppercase relative z-10">© 2026 VELO DIGITAL • 7020674916 • PUNE, MAHARASHTRA</p>
+</section>
 
 </body>
 </html>
