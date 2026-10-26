@@ -1,337 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  google-site-verification: googlef70c02bbe755aeef.html
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Velo Digital Co. | Websites for Dapoli &amp; Mumbai Businesses</title>
-<meta name="description" content="We don't just build websites, we build client machines. Premium web design for businesses in Dapoli and Mumbai.">
-<meta name="theme-color" content="#0a0a0a">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<script>tailwind.config={theme:{extend:{colors:{ink:'#0a0a0a',gold:'#E8C87A'},fontFamily:{display:['"Instrument Serif"','serif'],sans:['Manrope','sans-serif']}}}}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velo Digital - Premium Digital Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-html{background:#0a0a0a}
-body{background:#0a0a0a;color:#f3efe6;overflow-x:clip;-webkit-font-smoothing:antialiased}
-html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
-::selection{background:#E8C87A;color:#0a0a0a}
-:focus-visible{outline:2px solid #E8C87A;outline-offset:3px}
-#pre{position:fixed;inset:0;background:#0a0a0a;z-index:95}
-.rv{transform:translateY(110%);opacity:0}.fd{opacity:0}
-.nm .rv,.nm .fd{opacity:1!important;transform:none!important}
-.grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:90;opacity:.07;animation:grain 1s steps(6) infinite;
-background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-@keyframes grain{0%,100%{transform:translate(0,0)}20%{transform:translate(-5%,3%)}40%{transform:translate(3%,-6%)}60%{transform:translate(-4%,5%)}80%{transform:translate(6%,2%)}}
-.glass{background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 30px 80px -20px rgba(0,0,0,.8)}
-.marquee{animation:mq 30s linear infinite;will-change:transform}@keyframes mq{to{transform:translateX(-50%)}}
-.ol{color:transparent;-webkit-text-stroke:1px rgba(232,200,122,.6)}
-.fld{width:100%;border-bottom:1px solid rgba(255,255,255,.2);background:transparent;padding:1rem 0;font-size:1.125rem;outline:none;transition:border-color .2s}
-.fld:focus{border-color:#E8C87A}.fld::placeholder{color:rgba(255,255,255,.3)}option{background:#0a0a0a}
-#cur{position:fixed;left:0;top:0;z-index:100;pointer-events:none;margin:-6px 0 0 -6px;display:none}
-#cur i{display:block;width:12px;height:12px;border-radius:50%;background:#E8C87A;transition:transform .3s,opacity .3s}
-#cur.big i{transform:scale(4.5);opacity:.45}
-#pv{position:fixed;left:0;top:0;z-index:40;width:20rem;height:14rem;margin:-7rem 0 0 -10rem;pointer-events:none;display:none}
-#pvIn{width:100%;height:100%;border-radius:1rem;opacity:0;filter:url(#distort)}
-@media(hover:hover) and (pointer:fine){#cur{display:block}*{cursor:none!important}#pv{display:block}}
-@media(prefers-reduced-motion:reduce){.marquee,.grain{animation:none}}
+    * { font-family: 'Plus Jakarta Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+  body { background: #0A0A0A; color: white; overflow-x: hidden; }
+  
+  .glass-pill {
+    background: linear-gradient(145deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.1), inset 0 -1px 2px rgba(0,0,0,0.8);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(16px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .glass-pill:hover {
+    background: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.04) 100%);
+    border-color: rgba(255,255,255,0.2);
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.7);
+  }
+  .bg-grid {
+    background-size: 60px 60px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+    mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
+  }
+  .text-glow {
+    background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.4) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 20px rgba(255,255,255,0.15));
+  }
+  .giant-text {
+    font-size: 26vw; line-height: 0.75; font-weight: 900; letter-spacing: -0.05em;
+    color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.05);
+    background: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, transparent 60%);
+    -webkit-background-clip: text;
+  }
+  @keyframes heartbeat {
+    0%,100% { transform: scale(1); } 15%,45% { transform: scale(1.2); } 30% { transform: scale(1); }
+  }
+  .heartbeat { animation: heartbeat 2s infinite; }
 </style>
 </head>
-<body class="font-sans">
-<div class="grain" aria-hidden="true"></div>
-<div id="cur" aria-hidden="true"><i></i></div>
+<body>
 
-<div id="pre" class="flex flex-col justify-between p-6 md:p-10">
-  <p class="text-sm text-white/40">Dapoli &amp; Mumbai</p>
-  <h1 id="preName" class="flex flex-wrap gap-x-[.25em] font-display text-[19vw] leading-[.95] md:text-[10vw]" aria-label="Velo Digital Co."></h1>
-  <div>
-    <div class="mb-3 flex items-end justify-between"><span class="text-sm text-white/40">Loading</span><span id="num" class="font-display text-6xl tabular-nums text-gold">0%</span></div>
-    <div class="h-px bg-white/10"><div id="bar" class="h-full w-0 bg-gold"></div></div>
-  </div>
-</div>
-
-<header class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-5 md:px-12">
-  <a href="#top" class="font-display text-2xl">Velo<span class="text-gold">.</span></a>
-  <nav class="hidden gap-8 text-sm text-white/60 md:flex">
-    <a href="#services" class="hover:text-gold">Services</a><a href="#work" class="hover:text-gold">Work</a><a href="#about" class="hover:text-gold">About</a>
-  </nav>
-  <a href="#contact" class="glass rounded-full px-5 py-2 text-sm text-gold">Get 20% off</a>
-</header>
-
-<main id="top">
-  <section class="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 pb-16 pt-28 md:px-12">
-    <div id="b1" aria-hidden="true" class="pointer-events-none absolute left-1/2 top-1/3 -ml-[30vmin] -mt-[30vmin] h-[60vmin] w-[60vmin] rounded-full bg-gold/25 blur-[110px]"></div>
-    <div id="b2" aria-hidden="true" class="pointer-events-none absolute left-[15%] top-[60%] h-[40vmin] w-[40vmin] rounded-full bg-amber-700/20 blur-[100px]"></div>
-    <h2 id="hh" class="relative max-w-6xl font-display text-[16vw] leading-[.9] tracking-tight md:text-[9.5vw]"></h2>
-    <div class="relative mt-10 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
-      <div class="fd max-w-md">
-        <p class="text-lg text-white/80">We don't just build websites, we build client machines.</p>
-        <p class="mt-3 text-sm text-white/45">Velo Digital Co. makes websites for Dapoli &amp; Mumbai businesses.</p>
-      </div>
-      <div class="fd flex items-center gap-6">
-        <div class="-m-4 inline-block p-4"><a data-mag href="#contact" class="inline-flex rounded-full bg-gold px-8 py-4 font-semibold text-ink">Start your project</a></div>
-        <a href="#services" class="text-white/70 underline decoration-white/20 underline-offset-8 hover:text-gold">See pricing</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="overflow-hidden border-y border-white/10 py-6 md:py-8" aria-hidden="true"><div id="mq" class="marquee flex w-max"></div></div>
-
-  <section id="services" class="px-6 py-28 md:px-12 md:py-40">
-    <h2 class="mb-16 max-w-3xl font-display text-5xl leading-none md:text-8xl">Pick the plan that fits your business.</h2>
-    <div id="stackWrap"></div>
-  </section>
-
-  <section id="about" class="px-6 py-28 md:px-12 md:py-40"><div id="abt" class="max-w-5xl font-display text-[9vw] leading-[1.1] md:text-6xl"></div></section>
-
-  <section id="work" class="px-6 py-28 md:px-12 md:py-40">
-    <svg class="absolute h-0 w-0" aria-hidden="true"><filter id="distort"><feTurbulence type="fractalNoise" baseFrequency="0.015 0.03" numOctaves="2" result="n"/><feDisplacementMap id="disp" in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
-    <h2 class="mb-16 font-display text-5xl leading-none md:text-8xl">Selected work</h2>
-    <div id="wl" class="border-b border-white/10"></div>
-    <p class="mt-6 max-w-md text-sm text-white/40">These are concept builds. Our first client projects launch soon. Yours could be next.</p>
-    <div id="pv"><div id="pvIn"></div></div>
-  </section>
-</main>
-
-<footer id="contact" class="px-6 pb-8 pt-28 md:px-12 md:pt-40">
-  <div class="glass mb-6 inline-flex rounded-full px-5 py-2 text-sm text-gold">Launch offer: First 3 Clients Get 20% OFF</div>
-  <h2 class="max-w-4xl font-display text-6xl leading-[.95] md:text-9xl">Let's build your client machine.</h2>
-  <form id="form" class="mt-16 grid max-w-4xl gap-x-10 gap-y-4 md:grid-cols-2">
-    <input name="name" required placeholder="Your name" class="fld">
-    <input name="contact" required placeholder="Phone or email" class="fld">
-    <select id="plan" name="plan" class="fld"><option>Starter</option><option selected>Business</option><option>Premium</option><option>Not sure yet</option></select>
-    <input name="business" placeholder="Business name and city" class="fld">
-    <textarea name="message" rows="3" placeholder="Tell us what you need" class="fld md:col-span-2"></textarea>
-    <div class="flex flex-wrap items-center gap-6 md:col-span-2">
-      <button id="send" class="rounded-full bg-gold px-8 py-4 font-semibold text-ink disabled:opacity-60">Claim my 20% off</button>
-      <p id="st" class="text-sm text-gold"></p>
-    </div>
-  </form>
-  <div class="mt-28 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/50 md:flex-row md:justify-between">
-    <span>Dapoli, Maharashtra | Serving Mumbai &amp; Dapoli</span>
-    <a href="https://instagram.com/velodigitalco" target="_blank" rel="noopener noreferrer" class="hover:text-gold">Instagram @velodigitalco</a>
-    <span>&copy; <span id="yr"></span> Velo Digital Co. Founded by Vedant Holkar</span>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/motion@11.18.2/dist/motion.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script>
-/* Paste your Formspree URL here (https://formspree.io/f/xxxx) to receive enquiries */
-const FORM_ENDPOINT = '';
-
-const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
-const fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
-const lerp = (a, b, t) => a + (b - a) * t;
-const M = window.Motion;
-gsap.registerPlugin(ScrollTrigger);
-
-const plans = [
-  { n: 'Starter', p: '₹7,999', d: 'A sharp online presence for small shops and solo professionals.', f: ['Up to 3 pages', 'Mobile-first design', 'Contact form + WhatsApp button', 'Delivered in 7 days'] },
-  { n: 'Business', p: '₹14,999', hot: 1, d: 'Built to turn local searches into enquiries.', f: ['Up to 6 pages', 'Custom design + smooth animations', 'Google Business + local SEO setup', 'Delivered in 14 days'] },
-  { n: 'Premium', p: '₹24,999+', d: 'A fully custom, high-motion site for brands that want to stand out.', f: ['Unlimited pages, custom build', 'Booking, CMS or online store', 'Conversion strategy + analytics', 'Priority support'] },
-];
-const work = [
-  ['Konkan Retreat', 'Resort & stays', '2026', 'linear-gradient(135deg,#E8C87A,#7a4a1d)'],
-  ['Mumbai Dental Studio', 'Healthcare', '2026', 'linear-gradient(135deg,#6ee7f9,#1e3a5f)'],
-  ['Dapoli Fresh Co.', 'Local commerce', '2025', 'linear-gradient(135deg,#a3e635,#14532d)'],
-  ['Aarav Interiors', 'Design studio', '2025', 'linear-gradient(135deg,#f472b6,#4c1d95)'],
-];
-const lines = ['Velo Digital Co. is a young studio in Dapoli,', 'building fast, beautiful websites', 'for businesses across the Konkan and Mumbai.', 'Every page is designed to earn trust', 'and built to turn visitors into clients.', '— Vedant Holkar, founder'];
-
-/* ---------- build markup ---------- */
-$('#preName').innerHTML = ['Velo', 'Digital', 'Co.'].map(w => `<span class="inline-flex">${[...w].map(c => `<span class="inline-block overflow-hidden pb-[.1em]"><span class="rv inline-block">${c}</span></span>`).join('')}</span>`).join('');
-$('#hh').innerHTML = 'We Build Websites That Get Clients'.split(' ').map(w => `<span class="mr-[.22em] inline-block overflow-hidden pb-[.12em] align-top"><span class="rv inline-block">${w}</span></span>`).join('');
-const items = ['DAPOLI', 'MUMBAI', 'PREMIUM', 'MODERN', 'FAST'];
-$('#mq').innerHTML = [0, 1].map(() => `<div class="flex shrink-0">${[...items, ...items].map((t, i) => `<span class="px-6 font-display text-6xl md:text-9xl ${i % 2 ? 'text-gold' : 'ol'}">${t}<span class="pl-12 text-gold">•</span></span>`).join('')}</div>`).join('');
-$('#stackWrap').innerHTML = plans.map((p, i) => `
-  <div class="stack sticky ${i < 2 ? 'mb-[25vh]' : ''}" style="top:calc(5rem + ${i * 18}px)">
-    <div class="glass grid gap-6 rounded-[2rem] p-6 will-change-transform md:grid-cols-2 md:gap-12 md:p-12 ${p.hot ? 'ring-1 ring-gold/60' : ''}">
-      <div>
-        <div class="flex items-center gap-3"><h3 class="font-display text-4xl md:text-5xl">${p.n}</h3>${p.hot ? '<span class="rounded-full bg-gold px-3 py-1 text-xs font-semibold text-ink">Best value</span>' : ''}</div>
-        <p class="mt-4 font-display text-6xl text-gold md:text-8xl">${p.p}</p>
-        <p class="mt-4 max-w-xs text-white/55">${p.d}</p>
-      </div>
-      <div class="flex flex-col justify-between">
-        <ul class="space-y-3 text-white/80">${p.f.map(f => `<li class="flex items-start gap-3 border-b border-white/10 pb-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold"></span>${f}</li>`).join('')}</ul>
-        <a href="#contact" data-plan="${p.n}" class="mt-6 inline-flex justify-center rounded-full px-8 py-4 font-semibold md:self-start ${p.hot ? 'bg-gold text-ink' : 'border border-gold/50 text-gold'}">Get Started</a>
-      </div>
-    </div>
-  </div>`).join('');
-$('#abt').innerHTML = lines.map((l, i) => `<div class="rl overflow-hidden pb-[.12em] ${i === lines.length - 1 ? 'mt-8 text-[5vw] text-gold md:text-3xl' : ''}"><span class="block">${l}</span></div>`).join('');
-$('#wl').innerHTML = work.map(w => `
-  <a href="#contact" data-g="${w[3]}" class="wr group flex items-center justify-between gap-4 border-t border-white/10 py-7 md:py-12">
-    <span class="flex items-center gap-4"><span class="h-10 w-10 shrink-0 rounded-full md:hidden" style="background:${w[3]}"></span>
-    <span class="font-display text-4xl transition-all duration-500 group-hover:translate-x-4 group-hover:text-gold md:text-8xl">${w[0]}</span></span>
-    <span class="hidden text-right text-sm text-white/50 md:block">${w[1]}<br>${w[2]}</span>
-  </a>`).join('');
-$('#yr').textContent = new Date().getFullYear();
-
-/* ---------- Lenis smooth scroll (synced with GSAP) ---------- */
-let lenis;
-if (window.Lenis) {
-  lenis = new Lenis({ duration: 1.2, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
-  lenis.stop();
-  lenis.on('scroll', ScrollTrigger.update);
-  gsap.ticker.add(t => lenis.raf(t * 1000));
-  gsap.ticker.lagSmoothing(0);
-}
-document.addEventListener('click', e => {
-  const a = e.target.closest('a[href^="#"]'); if (!a) return;
-  const id = a.getAttribute('href'); if (id.length < 2) return;
-  e.preventDefault();
-  lenis ? lenis.scrollTo(id) : $(id).scrollIntoView({ behavior: 'smooth' });
-  if (a.dataset.plan) $('#plan').value = a.dataset.plan;
-});
-
-/* ---------- Scroll animations (GSAP ScrollTrigger) ---------- */
-const stacks = $$('.stack');
-stacks.forEach((c, i) => {
-  if (i === stacks.length - 1) return;
-  gsap.to(c.firstElementChild, { scale: .92 - i * .02, opacity: .35, ease: 'none', transformOrigin: 'center top',
-    scrollTrigger: { trigger: stacks[i + 1], start: 'top 85%', end: 'top 20%', scrub: true } });
-});
-$$('.rl').forEach(el => gsap.fromTo(el.firstElementChild, { yPercent: 115 }, { yPercent: 0, ease: 'none',
-  scrollTrigger: { trigger: el, start: 'top 92%', end: 'top 62%', scrub: true } }));
-addEventListener('load', () => ScrollTrigger.refresh());
-document.fonts && document.fonts.ready.then(() => ScrollTrigger.refresh());
-
-/* ---------- Intro: preloader + hero (Motion) ---------- */
-const up = (els, d = 0, g = .08) => M.animate(els, { transform: ['translateY(110%)', 'translateY(0%)'], opacity: [0, 1] },
-  { duration: 1, delay: M.stagger(g, { startDelay: d }), ease: [.22, 1, .36, 1] });
-const hero = () => {
-  up($$('#hh .rv'), 0, .09);
-  M.animate($$('.fd'), { opacity: [0, 1], transform: ['translateY(20px)', 'translateY(0px)'] },
-    { duration: 1, delay: M.stagger(.15, { startDelay: .6 }), ease: [.22, 1, .36, 1] });
-};
-(async function intro() {
-  if (!M) { document.documentElement.classList.add('nm'); $('#pre').remove(); lenis && lenis.start(); return; }
-  up($$('#preName .rv'), .1, .06);
-  await M.animate(0, 100, { duration: 2.4, ease: [.65, 0, .35, 1],
-    onUpdate: v => { $('#num').textContent = Math.round(v) + '%'; $('#bar').style.width = v + '%'; } });
-  await new Promise(r => setTimeout(r, 300));
-  const out = M.animate('#pre', { transform: ['translateY(0%)', 'translateY(-100%)'] }, { duration: .9, ease: [.76, 0, .24, 1] });
-  setTimeout(hero, 350);
-  await out;
-  $('#pre').remove();
-  lenis && lenis.start();
-})();
-
-/* ---------- Cursor, parallax blob, magnetic button, hover preview ---------- */
-const mouse = { x: innerWidth / 2, y: innerHeight / 2 };
-addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; }, { passive: true });
-if (fine) {
-  const cur = $('#cur'), b1 = $('#b1'), b2 = $('#b2'), pv = $('#pv'), pvIn = $('#pvIn'), disp = $('#disp');
-  addEventListener('mouseover', e => cur.classList.toggle('big', !!e.target.closest('a,button,input,select,textarea,[data-cursor]')));
-
-  const mags = $$('[data-mag]').map(el => {
-    const m = { el, x: 0, y: 0, tx: 0, ty: 0 }, k = el.parentElement;
-    k.addEventListener('mousemove', e => { const r = k.getBoundingClientRect(); m.tx = (e.clientX - r.left - r.width / 2) * .35; m.ty = (e.clientY - r.top - r.height / 2) * .35; });
-    k.addEventListener('mouseleave', () => { m.tx = 0; m.ty = 0; });
-    return m;
-  });
-
-  let pvOn = false, hide;
-  const c = { x: -100, y: -100 }, b = { x: 0, y: 0 }, p = { x: 0, y: 0, r: 0 };
-  $$('.wr').forEach(row => {
-    row.addEventListener('mouseenter', () => {
-      clearTimeout(hide);
-      if (!pvOn) { p.x = mouse.x; p.y = mouse.y; pvOn = true; }
-      pvIn.style.background = row.dataset.g;
-      M && M.animate(pvIn, { opacity: 1, transform: ['scale(.6)', 'scale(1)'] }, { duration: .35 });
-      !M && (pvIn.style.opacity = 1);
-    });
-    row.addEventListener('mouseleave', () => {
-      M ? M.animate(pvIn, { opacity: 0, transform: 'scale(.6)' }, { duration: .25 }) : (pvIn.style.opacity = 0);
-      hide = setTimeout(() => pvOn = false, 300);
-    });
-  });
-
-  (function loop() {
-    c.x = lerp(c.x, mouse.x, .28); c.y = lerp(c.y, mouse.y, .28);
-    cur.style.transform = `translate3d(${c.x}px,${c.y}px,0)`;
-    b.x = lerp(b.x, (mouse.x / innerWidth - .5) * 200, .05); b.y = lerp(b.y, (mouse.y / innerHeight - .5) * 200, .05);
-    b1.style.transform = `translate3d(${b.x}px,${b.y}px,0)`;
-    b2.style.transform = `translate3d(${-b.x * 1.6}px,${-b.y * 1.6}px,0)`;
-    mags.forEach(m => { m.x = lerp(m.x, m.tx, .15); m.y = lerp(m.y, m.ty, .15); m.el.style.transform = `translate3d(${m.x}px,${m.y}px,0)`; });
-    if (pvOn) {
-      const nx = lerp(p.x, mouse.x, .12), ny = lerp(p.y, mouse.y, .12), vx = nx - p.x, vy = ny - p.y;
-      p.x = nx; p.y = ny;
-      p.r = lerp(p.r, Math.max(-12, Math.min(12, vx * .6)), .2);
-      pv.style.transform = `translate3d(${p.x}px,${p.y}px,0) rotate(${p.r}deg) skewX(${-p.r * .6}deg)`;
-      disp.setAttribute('scale', Math.min(Math.hypot(vx, vy) * 4, 110).toFixed(1));
-    }
-    requestAnimationFrame(loop);
-  })();
-}
-
-/* ---------- Contact form ---------- */
-$('#form').addEventListener('submit', async e => {
-  e.preventDefault();
-  const st = $('#st'), btn = $('#send');
-  if (!FORM_ENDPOINT) { st.textContent = 'Demo mode: add your Formspree URL to FORM_ENDPOINT in this file to receive enquiries.'; return; }
-  btn.disabled = true; btn.textContent = 'Sending...';
-  try {
-    const r = await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(e.target))) });
-    if (!r.ok) throw 0;
-    btn.textContent = 'Sent'; st.textContent = 'Thanks. We will reply within 24 hours.';
-  } catch { btn.disabled = false; btn.textContent = 'Claim my 20% off'; st.textContent = 'Could not send. Message us on Instagram @velodigitalco instead.'; }
-});
-</script>
-</body>
-</html><!-- RECENT WORK - DEMO PROJECTS -->
-<section id="work" class="py-20 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold mb-3">Recent Work</h2>
-      <p class="text-gray-600">We build websites that get clients for hotels in Konkan</p>
-    </div>
-    
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- Project 1 -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600" class="w-full h-48 object-cover" alt="Resort">
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Sagar Kinara Resort, Dapoli</h3>
-          <p class="text-gray-600 text-sm mb-4">Luxury beach resort website with direct booking system. Increased bookings by 40%.</p>
-          <div class="flex gap-2">
-            <span class="text-xs bg-blue-100 text-blue-600 px-3 py-1 rounded-full">Booking System</span>
-            <span class="text-xs bg-green-100 text-green-600 px-3 py-1 rounded-full">Live</span>
-          </div>
-          <button class="mt-4 w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800">View Live Demo →</button>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600" class="w-full h-48 object-cover" alt="Homestay">
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Konkan Swad Homestay</h3>
-          <p class="text-gray-600 text-sm mb-4">Cozy homestay website with gallery, WhatsApp booking & Google reviews.</p>
-          <div class="flex gap-2">
-            <span class="text-xs bg-orange-100 text-orange-600 px-3 py-1 rounded-full">Gallery</span>
-            <span class="text-xs bg-green-100 text-green-600 px-3 py-1 rounded-full">Live</span>
-          </div>
-          <button class="mt-4 w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800">View Live Demo →</button>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" class="w-full h-48 object-cover" alt="Restaurant">
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Hotel Rajdhani, Dapoli</h3>
-          <p class="text-gray-600 text-sm mb-4">Restaurant website with online menu, table booking & Instagram feed.</p>
-          <div class="flex gap-2">
-            <span class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full">Online Menu</span>
-            <span class="text-xs bg-green-100 text-green-600 px-3 py-1 rounded-full">Live</span>
-          </div>
-          <button class="mt-4 w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800">View Live Demo →</button>
-        </div>
-      </div>
-    </div>
+<!-- HERO -->
+<section class="relative z-10 min-h-[90vh] flex flex-col items-center justify-center px-6 bg-[#0A0A0A] border-b border-white/10 rounded-b-[2rem]">
+  <div class="absolute inset-0 bg-grid pointer-events-none"></div>
+  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[60vh] bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.08)_0%,transparent_70%)] blur-[80px] pointer-events-none"></div>
+  
+  <p class="text-[11px] tracking-[0.3em] text-white/40 uppercase font-bold mb-6">Velo Digital Co.</p>
+  <h1 class="text-5xl md:text-8xl font-black tracking-tighter text-center leading-[0.9]">We Build <br><span class="text-glow">Digital Hotels</span></h1>
+  <p class="mt-6 text-white/50 text-sm md:text-base max-w-md text-center">Premium websites for hotels, villas & resorts that convert visitors into bookings.</p>
+  
+  <div class="mt-10 flex flex-wrap justify-center gap-4">
+    <a href="#work" class="glass-pill px-10 py-5 rounded-full font-bold text-sm flex items-center gap-3">View Our Work</a>
+    <a href="https://wa.me/917030942200" class="bg-white text-black px-10 py-5 rounded-full font-bold text-sm hover:scale-105 transition">Let's Talk →</a>
   </div>
 </section>
 
+<!-- FOOTER - SAME AS YOUR SCREENSHOT -->
+<div class="relative h-[100vh] w-full" style="clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%)">
+<footer class="fixed bottom-0 left-0 h-[100vh] w-full flex flex-col justify-between overflow-hidden bg-[#0A0A0A]">
+  <div class="bg-grid absolute inset-0 pointer-events-none"></div>
+  <div class="absolute -bottom-[5vh] left-1/2 -translate-x-1/2 giant-text pointer-events-none select-none">VELO</div>
+
+  <div class="relative z-10 flex flex-1 flex-col items-center justify-center px-6 mt-10 w-full max-w-5xl mx-auto">
+    <h2 class="text-[12vw] md:text-[8vw] font-black tracking-tighter leading-[0.9] text-center">
+      <span class="text-white">Ready to</span><br>
+      <span class="text-white/40">begin?</span>
+    </h2>
+
+    <div class="flex flex-col items-center gap-4 w-full mt-12">
+      <div class="flex flex-col md:flex-row gap-4 w-full max-w-[380px]">
+        <a href="#" class="glass-pill w-full px-8 py-5 rounded-full font-bold text-[15px] flex items-center justify-center gap-3">
+          <span class="text-xl">🏨</span> View Live Demo
+        </a>
+        <a href="#" class="glass-pill w-full px-8 py-5 rounded-full font-bold text-[15px] flex items-center justify-center gap-3">
+          <span class="text-xl">📱</span> Our Projects
+        </a>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3 mt-4">
+        <a href="#" class="glass-pill px-6 py-3 rounded-full text-white/60 text-[13px] font-medium">Privacy Policy</a>
+        <a href="#" class="glass-pill px-6 py-3 rounded-full text-white/60 text-[13px] font-medium">Terms of Service</a>
+        <a href="#" class="glass-pill px-6 py-3 rounded-full text-white/60 text-[13px] font-medium">Support</a>
+      </div>
+
+      <div class="glass-pill px-6 py-3 rounded-full flex items-center gap-2 mt-2">
+        <span class="text-white/50 text-[11px] font-bold tracking-widest uppercase">Crafted with</span>
+        <span class="heartbeat text-red-500 text-sm">❤</span>
+        <span class="text-white/50 text-[11px] font-bold tracking-widest uppercase">by</span>
+        <span class="text-white font-black text-[13px] ml-1">Velo Digital</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative z-20 w-full pb-8 px-6 flex justify-center">
+    <p class="text-white/30 text-[10px] tracking-widest uppercase font-semibold">© 2026 Velo Digital. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+
+</body>
+</html>
