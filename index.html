@@ -8,64 +8,52 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Syne:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 <style>
-  html.lenis, html.lenis body { height: auto; }
-  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
   body{font-family:'Poppins',sans-serif;background:#050505;color:#fff;overflow-x:hidden}
   .gold-grad{background:linear-gradient(135deg,#D4AF37 0%,#FFD700 50%,#D4AF37 100%)}
   .gold-text{color:#E8C765}
-  .glass{background:rgba(255,255,255,0.04);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08)}
-  .reveal{opacity:0;transform:translateY(80px)}
+  .glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08)}
   .syne{font-family:'Syne',sans-serif}
+  .reveal{opacity:0;transform:translateY(60px)}
 </style>
 </head>
 <body>
-<div id="cursor" class="hidden md:block fixed w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(232,199,101,0.12)_0%,transparent_70%)] pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2"></div>
+<div id="cursor" class="hidden md:block fixed w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(212,175,55,0.15)_0%,transparent_70%)] pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2"></div>
 
-<nav class="fixed top-0 w-full z-40 glass">
+<nav class="fixed top-0 w-full z-40 bg-black/70 backdrop-blur-2xl border-b border-white/10">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-black tracking-tighter syne"><span class="gold-text">VELO</span> DIGITAL</h1>
-    <div class="flex items-center gap-3">
-      <span class="hidden md:block text-[10px] tracking-[0.2em] text-zinc-500">BY BEASTY</span>
-      <a href="https://wa.me/917020674916" class="gold-grad text-black px-6 py-2.5 rounded-full font-bold text-[12px] tracking-wide hover:scale-105 transition">Let's Talk →</a>
-    </div>
+    <h1 class="text-[22px] font-black tracking-tighter syne"><span class="gold-text">VELO</span> DIGITAL <span class="text-[10px] font-normal tracking-[0.2em] text-zinc-500 ml-2">BY BEASTY</span></h1>
+    <a href="https://wa.me/917020674916" class="gold-grad text-black px-7 py-2.5 rounded-full font-bold text-[12px] tracking-wide hover:scale-105 transition">Let's Talk →</a>
   </div>
 </nav>
 
-<!-- HERO WITH 2 PROFESSIONAL QUOTES -->
-<section class="min-h-[90vh] pt-32 px-6 max-w-7xl mx-auto flex flex-col justify-center">
-  <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-12">
-    <div class="flex-1">
-      <h1 class="text-[13vw] md:text-[8rem] font-black leading-[0.8] tracking-[-0.06em] syne">
-        <div class="overflow-hidden"><span class="hero-t block">WE BUILD</span></div>
-        <div class="overflow-hidden"><span class="hero-t block gold-text">KDK SITES</span></div>
-        <div class="overflow-hidden"><span class="hero-t block">THAT SELL.</span></div>
-      </h1>
-      <div class="mt-8 flex gap-3">
-        <a href="#work" class="glass px-6 py-3 rounded-full text-sm font-medium hover:bg-white/10 transition">View Work</a>
-        <a href="https://wa.me/917020674916" class="gold-grad text-black px-6 py-3 rounded-full text-sm font-bold">Start Project</a>
-      </div>
+<!-- HERO - NO KDK -->
+<section class="min-h-[92vh] pt-36 pb-10 px-6 max-w-7xl mx-auto flex flex-col justify-center">
+  <h1 class="text-[13vw] md:text-[8.5rem] font-black leading-[0.82] tracking-[-0.05em] syne">
+    <div class="overflow-hidden"><span class="hero-t block">WE BUILD</span></div>
+    <div class="overflow-hidden"><span class="hero-t block gold-text">PREMIUM</span></div>
+    <div class="overflow-hidden"><span class="hero-t block">SITES THAT SELL.</span></div>
+  </h1>
+
+  <div class="mt-10 flex flex-col lg:flex-row lg:items-start justify-between gap-10">
+    <div class="flex gap-3">
+      <a href="#work" class="glass px-7 py-3.5 rounded-full text-sm font-medium hover:bg-white/10 transition">View Work ↓</a>
+      <a href="https://wa.me/917020674916" class="gold-grad text-black px-7 py-3.5 rounded-full text-sm font-bold hover:scale-105 transition">Start Your Project</a>
     </div>
-    
-    <div class="reveal max-w-[520px] lg:mb-8">
+
+    <!-- 2 PROFESSIONAL QUOTES -->
+    <div class="reveal max-w-[540px]">
       <div class="flex gap-5">
-        <div class="w-[2px] bg-gradient-to-b from-[#E8C765] via-[#E8C765]/30 to-transparent shrink-0"></div>
+        <div class="w-[2px] bg-gradient-to-b from-[#E8C765] via-[#E8C765]/30 to-transparent"></div>
         <div class="space-y-5">
-          <p class="text-[22px] md:text-[25px] font-medium leading-[1.25] tracking-[-0.02em]">
-            A premium website is not an expense.<br>
-            <span class="font-light text-zinc-400">It's your best-performing sales asset.</span>
-          </p>
+          <p class="text-[22px] md:text-[26px] font-medium leading-[1.25] tracking-tight">A premium website is not an expense.<br><span class="font-light text-zinc-400">It's your best-performing sales asset.</span></p>
           <div class="w-12 h-[1px] bg-white/10"></div>
-          <p class="text-[14px] leading-[1.6] tracking-wide text-zinc-400">
-            Design builds trust. Trust builds business.<br>We focus on both.
-          </p>
+          <p class="text-[14.5px] leading-[1.6] text-zinc-400">Design builds trust. Trust builds business. We focus on both.</p>
           <div class="flex items-center gap-3 pt-2">
-            <div class="w-9 h-9 rounded-full gold-grad flex items-center justify-center text-black font-black text-[12px]">B</div>
-            <div>
-              <p class="text-[12px] font-bold tracking-[0.2em]">BEASTY</p>
-              <p class="text-[10px] tracking-[0.15em] text-zinc-500 -mt-0.5">FOUNDER, VELO DIGITAL</p>
-            </div>
+            <div class="w-9 h-9 rounded-full gold-grad flex items-center justify-center text-black font-black text-xs">B</div>
+            <div><p class="text-xs font-bold tracking-[0.2em]">BEASTY</p><p class="text-[10px] tracking-widest text-zinc-500">FOUNDER, VELO DIGITAL</p></div>
           </div>
         </div>
       </div>
@@ -73,8 +61,68 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- SERVICES MOTION -->
+<section class="px-6 max-w-7xl mx-auto py-10">
+  <div class="reveal glass rounded-[2.5rem] p-8 md:p-12">
+    <div class="grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-1"><p class="text-[11px] tracking-[0.3em] text-zinc-500 mb-3">SERVICES</p><h3 class="text-[28px] font-bold leading-tight">Everything to dominate online.</h3></div>
+      <div class="space-y-6"><div class="flex gap-3"><span class="text-[#E8C765]">⚡</span><div><p class="font-semibold">High-Performance Websites</p><p class="text-sm text-zinc-500 mt-1">Next.js, Shopify - Speed that converts.</p></div></div><div class="flex gap-3"><span class="text-[#E8C765]">🎨</span><div><p class="font-semibold">UI/UX + Motion Graphics</p><p class="text-sm text-zinc-500 mt-1">GSAP, Lenis, Framer Motion.</p></div></div></div>
+      <div class="space-y-6"><div class="flex gap-3"><span class="text-[#E8C765]">🚀</span><div><p class="font-semibold">Conversion Strategy</p><p class="text-sm text-zinc-500 mt-1">Not just design, built for sales.</p></div></div><div class="flex gap-3"><span class="text-[#E8C765]">✨</span><div><p class="font-semibold">Premium Branding</p><p class="text-sm text-zinc-500 mt-1">Look expensive, feel premium.</p></div></div></div>
+      <div class="flex flex-col justify-center"><div class="glass rounded-2xl p-4 flex items-center gap-3"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span><span class="text-xs">Available for new projects</span></div><p class="text-[11px] text-zinc-600 mt-4 tracking-wide">Based in Pune, working worldwide.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS WITH LINKS -->
 <section id="work" class="px-6 max-w-7xl mx-auto py-16">
   <div class="flex justify-between items-end mb-10">
-    <h2 class="reveal text-4xl md:text-6xl font-black tracking-tighter">SELECTED<br><span class="text-white/30 font-light">WORK (03)</span></h2>
-    <p class="reveal hidden md:block text-sm text-zinc-500 max-w-[260px]">Real brands, real results. All built for performance
+    <h2 class="reveal text-5xl md:text-7xl font-black tracking-tighter syne leading-[0.85]">SELECTED<br><span class="text-white/20 font-light">WORK</span></h2>
+    <p class="reveal hidden md:block text-sm text-zinc-500 max-w-[280px]">Real brands, real results. Built for performance & conversion.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="reveal glass rounded-[2rem] overflow-hidden hover:bg-white/[0.07] transition-all duration-500 group">
+      <div class="aspect-[4/3] bg-gradient-to-br from-zinc-900 to-black p-7 flex flex-col justify-between"><div class="flex justify-between items-center"><span class="text-[11px] tracking-widest text-zinc-500">01 / FASHION</span><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span></div><h3 class="text-4xl font-black syne tracking-tighter">KNOWN<br>STRANGERS</h3></div>
+      <div class="p-6"><p class="text-sm text-zinc-400">Premium streetwear - Conversion focused.</p><a href="https://knownstrangers.in/" target="_blank" class="mt-4 block gold-grad text-black py-3.5 rounded-full text-center font-bold text-sm group-hover:scale-[1.02] transition">View Live →</a></div>
+    </div>
+    <div class="reveal glass rounded-[2rem] overflow-hidden hover:bg-white/[0.07] transition-all duration-500 group">
+      <div class="aspect-[4/3] bg-gradient-to-br from-amber-900/20 to-black p-7 flex flex-col justify-between"><div class="flex justify-between items-center"><span class="text-[11px] tracking-widest text-zinc-500">02 / LUXURY</span><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span></div><h3 class="text-4xl font-black syne tracking-tighter">THE DESIGNER<br>MONK</h3></div>
+      <div class="p-6"><p class="text-sm text-zinc-400">Luxury interiors - Minimal portfolio.</p><a href="https://thedesignermonk.in/" target="_blank" class="mt-4 block gold-grad text-black py-3.5 rounded-full text-center font-bold text-sm group-hover:scale-[1.02] transition">View Live →</a></div>
+    </div>
+    <div class="reveal glass rounded-[2rem] overflow-hidden hover:bg-white/[0.07] transition-all duration-500 group">
+      <div class="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-black p-7 flex flex-col justify-between"><div class="flex justify-between items-center"><span class="text-[11px] tracking-widest text-zinc-500">03 / GAMING</span><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span></div><h3 class="text-4xl font-black syne tracking-tighter">CLUTCH<br>GG</h3></div>
+      <div class="p-6"><p class="text-sm text-zinc-400">Gaming marketplace - Bold UI.</p><a href="https://clutchgg.in/" target="_blank" class="mt-4 block gold-grad text-black py-3.5 rounded-full text-center font-bold text-sm group-hover:scale-[1.02] transition">View Live →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER CONTACT -->
+<section class="relative bg-[#080808] border-t border-zinc-900 mt-20 overflow-hidden">
+  <div class="absolute bottom-0 left-0 w-full pointer-events-none overflow-hidden"><h1 class="text-[24vw] font-black leading-none text-white/[0.03] syne tracking-tighter">VELO</h1></div>
+  <div class="relative max-w-4xl mx-auto px-6 py-24 text-center">
+    <h2 class="text-6xl md:text-8xl font-black leading-[0.85] tracking-tighter syne"><span class="block reveal">Ready to</span><span class="block reveal text-white/30 font-light">begin?</span></h2>
+    <p class="reveal mt-6 text-zinc-500">Let's build something competitors will copy.</p>
+    <div class="mt-12 max-w-[380px] mx-auto flex flex-col gap-4">
+      <a href="https://wa.me/917020674916" class="reveal gold-grad text-black rounded-full py-4 font-bold flex justify-center gap-2 hover:scale-105 transition">💬 WhatsApp - 7020674916</a>
+      <a href="mailto:hello@velodigital.in" class="reveal glass rounded-full py-4 text-sm font-medium hover:bg-white/10 transition">📧 hello@velodigital.in</a>
+    </div>
+    <div class="mt-14 flex flex-wrap justify-center gap-3">
+      <span class="reveal glass rounded-full px-6 py-2.5 text-xs text-zinc-500">© 2025 Velo Digital</span>
+      <div class="reveal glass rounded-full px-6 py-2.5 text-xs flex gap-2 items-center"><span class="text-zinc-500 text-[10px] tracking-widest">CRAFTED WITH ❤ BY</span><span class="text-white font-black">Beasty</span></div>
+    </div>
+  </div>
+</section>
+
+<script>
+const lenis = new Lenis({duration:1.4, smoothWheel:true});
+function raf(t){lenis.raf(t); requestAnimationFrame(raf)}requestAnimationFrame(raf);
+gsap.registerPlugin(ScrollTrigger);
+lenis.on('scroll', ScrollTrigger.update);
+gsap.ticker.add((time)=>{lenis.raf(time*1000)});
+gsap.from(".hero-t",{y:120, duration:1.4, stagger:0.12, ease:"power4.out", delay:0.3});
+gsap.utils.toArray(".reveal").forEach(el=>{
+  gsap.to(el,{y:0, opacity:1, duration:1, ease:"power3.out", scrollTrigger:{trigger:el, start:"top 88%"}})
+});
+document.addEventListener("mousemove",e=>{gsap.to("#cursor",{x:e.clientX, y:e.clientY, duration:1.2, ease:"power3.out"})});
+</script>
+</body>
+</html>
