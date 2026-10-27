@@ -3,182 +3,182 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VELODIGITAL.CO - Glassmorphism Navigation Edition - Ultra Full</title>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<title>VELODIGITAL.CO - Black & White Premium - Poppins Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--cyan:#0EA5E9;--blue:#1E3A8A;--dark:#070A14}
 html{scroll-behavior:smooth}
-body{font-family:'Outfit',sans-serif;background:#070A14;color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes lampGlow{0%,100%{opacity:.8}50%{opacity:1;filter:blur(12px)}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-.reveal{animation:fadeUp .8s cubic-bezier(.22,1,.36,1) both}
-.glass-nav-wrapper{position:fixed;left:50%;transform:translateX(-50%);z-index:200;bottom:24px;transition:all .4s}
-.glass-nav{display:flex;align-items:center;gap:4px;padding:6px;border-radius:100px;box-shadow:0 15px 50px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.1);background:rgba(7,10,20,.45);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%)}
-.glass-nav-btn{position:relative;cursor:pointer;font-size:13px;font-weight:700;padding:10px 22px;border-radius:100px;transition:all .3s;border:none;background:transparent;color:rgba(255,255,255,.7)}
-.glass-nav-btn.active{background:rgba(255,255,255,.1);color:#0EA5E9;box-shadow:0 0 20px rgba(14,165,233,.2)}
-.glass-nav-btn.active::before{content:'';position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:32px;height:4px;background:#0EA5E9;border-radius:0 0 10px 10px;box-shadow:0 0 20px rgba(14,165,233,.8)}
-.glass-nav-btn .icon-mobile{display:none}
-.glass-divider{width:1px;height:20px;background:rgba(255,255,255,.15);margin:0 6px}
-.theme-btn{cursor:pointer;padding:10px;border-radius:100px;border:none;background:rgba(255,255,255,.08);color:rgba(255,255,255,.7)}
-.hero{padding:140px 5% 90px;background:radial-gradient(120% 120% at 20% 10%,rgba(30,58,138,.35),transparent 50%),radial-gradient(100% 100% at 80% 80%,rgba(14,165,233,.18),transparent 60%),#070A14;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;max-width:1350px;margin:0 auto}
-.hero h1{font-size:clamp(38px,5.5vw,72px);line-height:.9;font-weight:800;letter-spacing:-2.5px}
-.hero h1 b{color:var(--cyan);display:block}
-.hero p{margin-top:20px;color:rgba(255,255,255,.6);line-height:1.6;font-size:16px}
-.btn{padding:14px 26px;border-radius:100px;font-weight:700;text-decoration:none;font-size:13px;display:inline-flex}
-.btn-primary{background:var(--cyan);color:#fff}
-.btn-sec{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff}
-.glass-card{background:linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.03));backdrop-filter:blur(40px);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:30px}
-.glass-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
-.glass-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:14px;border-radius:14px;font-size:11px}
-.projects{padding:90px 5%;background:#070A14}
-.sec-head{text-align:center}
-.sec-head h2{font-size:clamp(32px,5vw,54px);font-weight:800}
-.badge{background:linear-gradient(90deg,#0EA5E9,#06B6D4);color:#fff;display:inline-flex;padding:8px 18px;border-radius:100px;font-size:12px;font-weight:800;margin-bottom:16px;animation:float 3s ease-in-out infinite}
-.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;max-width:1200px;margin:0 auto}
-.p-card{background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.03));backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,.1);border-radius:22px;overflow:hidden;transition:.6s}
-.p-card:hover{transform:translateY(-12px) scale(1.01)}
-.p-img{height:380px;overflow:hidden;position:relative;background:#0f172a}
-.p-img img{width:100%;height:100%;object-fit:cover;transition:.8s}
-.p-card:hover .p-img img{transform:scale(1.1)}
-.p-tag{position:absolute;top:14px;left:14px;background:rgba(0,0,0,.7);backdrop-filter:blur(10px);color:#fff;font-size:10px;padding:6px 12px;border-radius:20px}
+body{font-family:'Poppins',sans-serif;background:#08080A;color:#F5F5F5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.reveal{opacity:0;transform:translateY(20px) translateZ(0)}
+.reveal.in{animation:fadeUp .7s cubic-bezier(.22,1,.36,1) forwards}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px) translateZ(0)}to{opacity:1;transform:translateY(0) translateZ(0)}}
+@keyframes lampGlow{0%,100%{opacity:.7}50%{opacity:1;filter:blur(10px)}}
+.glass-nav-wrapper{position:fixed;left:50%;transform:translateX(-50%) translateZ(0);z-index:200;bottom:24px}
+.glass-nav{display:flex;align-items:center;gap:4px;padding:6px;border-radius:100px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);backdrop-filter:blur(40px) saturate(180%);box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.glass-nav-btn{position:relative;cursor:pointer;font-size:12.5px;font-weight:500;font-family:'Poppins',sans-serif;padding:10px 20px;border-radius:100px;border:none;background:transparent;color:rgba(255,255,255,0.55);transition:.4s}
+.glass-nav-btn.active{background:#FFFFFF;color:#08080A;font-weight:600;box-shadow:0 4px 20px rgba(255,255,255,0.15)}
+.glass-nav-btn.active::before{content:'';position:absolute;top:-7px;left:50%;transform:translateX(-50%);width:24px;height:2px;background:#FFFFFF;box-shadow:0 0 12px rgba(255,255,255,0.8);animation:lampGlow 3s ease-in-out infinite}
+.glass-divider{width:1px;height:18px;background:rgba(255,255,255,0.12);margin:0 6px}
+.theme-btn{cursor:pointer;padding:10px 14px;border-radius:100px;border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.6);font-size:12px;font-family:'Poppins',sans-serif}
+.hero{padding:140px 5% 90px;background:radial-gradient(120% 120% at 15% 10%,rgba(255,255,255,0.06),transparent 50%),#08080A;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;max-width:1350px;margin:0 auto}
+.hero h1{font-size:clamp(38px,5.5vw,72px);line-height:.9;font-weight:800;letter-spacing:-2.5px;color:#fff;font-family:'Syne',sans-serif}
+.hero h1 b{color:#FFFFFF;display:block;font-weight:400;font-family:'Instrument Serif',serif;font-style:italic;font-size:.85em;margin-top:4px}
+.hero p{margin-top:20px;color:rgba(255,255,255,.55);line-height:1.7;font-size:15px;font-weight:300;max-width:520px;font-family:'Poppins',sans-serif}
+.btn{padding:13px 24px;border-radius:100px;font-weight:500;text-decoration:none;font-size:12.5px;display:inline-flex;gap:8px;transition:.4s;font-family:'Poppins',sans-serif}
+.btn-primary{background:#FFFFFF;color:#08080A}
+.btn-sec{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#fff}
+.glass-card{background:linear-gradient(135deg,rgba(255,255,255,.07),rgba(255,255,255,.02));backdrop-filter:blur(40px);border:1px solid rgba(255,255,255,.10);border-radius:28px;padding:28px}
+.glass-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+.glass-item{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);padding:13px;border-radius:14px;font-size:11px;font-family:'Poppins',sans-serif}
+.projects{padding:90px 5%;background:#08080A}
+.badge{background:#FFFFFF;color:#08080A;display:inline-flex;padding:7px 16px;border-radius:100px;font-size:10.5px;font-weight:600;margin-bottom:16px;font-family:'Poppins',sans-serif}
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px;max-width:1200px;margin:0 auto}
+.p-card{background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.02));backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,.08);border-radius:22px;overflow:hidden;transition:.6s cubic-bezier(.22,1,.36,1)}
+.p-card:hover{transform:translateY(-10px) scale(1.01) translateZ(0)}
+.p-img{height:420px;overflow:hidden;position:relative;background:#121212}
+.p-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.22,1,.36,1);filter:grayscale(10%) contrast(1.05)}
+.p-card:hover .p-img img{transform:scale(1.08) translateZ(0);filter:grayscale(0%)}
+.p-tag{position:absolute;top:14px;left:14px;background:rgba(0,0,0,.65);backdrop-filter:blur(12px);color:#fff;font-size:9.5px;padding:6px 11px;border-radius:100px;border:1px solid rgba(255,255,255,0.12);font-family:'Poppins',sans-serif}
 .p-info{padding:22px}
+.p-info h3{font-size:16px;font-weight:600;color:#fff;font-family:'Syne',sans-serif}
+.p-info small{color:rgba(255,255,255,0.6);font-size:11px;font-family:'Poppins',sans-serif}
+.p-info p{font-size:12.5px;color:rgba(255,255,255,.50);margin-top:8px;line-height:1.6;font-weight:300;font-family:'Poppins',sans-serif}
 .p-links{display:flex;gap:8px;margin-top:16px}
-.p-links a{flex:1;text-align:center;padding:10px;border-radius:10px;font-size:12px;font-weight:700;text-decoration:none}
-.link-primary{background:#fff;color:#000}
-.link-sec{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff}
-.pricing{padding:90px 5%;background:#070A14;text-align:center}
-.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:48px auto 0}
-.price-card{background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.02));backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,.1);border-radius:28px;padding:32px;text-align:left;transition:.6s}
-.price-card.popular{background:linear-gradient(135deg,#0EA5E9 0%,#1E3A8A 100%);transform:scale(1.05)}
-.price-card .price{font-size:36px;font-weight:800;margin:14px 0}
-.price-card ul{list-style:none;margin-top:18px;font-size:13px;line-height:2.4;color:rgba(255,255,255,.75)}
-.btn-price{display:block;text-align:center;margin-top:22px;padding:14px;border-radius:100px;font-weight:800;text-decoration:none;font-size:12px}
-.btn-dark{background:#fff;color:#000}
-.btn-cyan{background:#000;color:#fff}
-.btn-light{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
-.famous-wrap{background:#070A14;padding:90px 5% 40px}
-.famous-grid{display:grid;grid-template-columns:1fr .9fr;gap:60px;max-width:1250px;margin:0 auto;align-items:start}
-.famous-grid h2{font-size:clamp(42px,6.5vw,88px);line-height:.9;font-weight:800;letter-spacing:-2.5px}
-.famous-grid h2 i{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;text-transform:lowercase;display:block;font-size:.68em}
-.glass-form{background:linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.04));backdrop-filter:blur(40px);border:1px solid rgba(255,255,255,.15);border-radius:32px;padding:32px}
-.glass-form input,.glass-form select,.glass-form textarea{width:100%;background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,.15);padding:18px 0;color:#fff;font-size:14px;outline:none;font-family:'Outfit',sans-serif}
-.glass-btn-black{width:100%;background:#fff;color:#000;border:none;padding:16px;border-radius:100px;font-weight:800;font-size:11px;letter-spacing:1.5px;margin-top:24px;cursor:pointer}
-.glass-btn-blue{width:100%;background:var(--blue);color:#fff;border:none;padding:16px;border-radius:100px;font-weight:800;font-size:11px;margin-top:12px;display:flex;justify-content:center}
-.whatsapp{position:fixed;bottom:22px;right:90px;background:#25D366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px;z-index:200;text-decoration:none}
-@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:110px}.p-grid{grid-template-columns:1fr}.price-grid{grid-template-columns:1fr}.price-card.popular{transform:scale(1)}.famous-grid{grid-template-columns:1fr}.glass-nav-wrapper{bottom:20px}.whatsapp{right:22px;bottom:90px}}
+.p-links a{flex:1;text-align:center;padding:10px;border-radius:100px;font-size:11.5px;font-weight:500;text-decoration:none;font-family:'Poppins',sans-serif}
+.link-primary{background:#FFFFFF;color:#08080A}
+.link-sec{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);color:rgba(255,255,255,0.8)}
+.pricing{padding:90px 5%;background:#08080A;text-align:center}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1100px;margin:48px auto 0}
+.price-card{background:linear-gradient(135deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:28px;padding:30px;text-align:left;transition:.6s}
+.price-card.popular{background:#FFFFFF;color:#08080A;transform:scale(1.04)}
+.price-card.popular .price, .price-card.popular h3, .price-card.popular ul{color:#08080A}
+.price-card .price{font-size:34px;font-weight:700;margin:14px 0;color:#fff;font-family:'Syne',sans-serif}
+.price-card ul{list-style:none;margin-top:18px;font-size:12.5px;line-height:2.3;color:rgba(255,255,255,.60);font-weight:300;font-family:'Poppins',sans-serif}
+.price-card.popular ul{color:rgba(0,0,0,0.65)}
+.btn-price{display:block;text-align:center;margin-top:22px;padding:13px;border-radius:100px;font-weight:600;text-decoration:none;font-size:11.5px;font-family:'Poppins',sans-serif}
+.btn-dark{background:#FFFFFF;color:#08080A}
+.btn-light{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.12)}
+.price-card.popular .btn-price{background:#08080A;color:#fff}
+.famous-wrap{background:#08080A;padding:90px 5% 40px;border-top:1px solid rgba(255,255,255,0.06)}
+.famous-grid{display:grid;grid-template-columns:1fr .9fr;gap:60px;max-width:1250px;margin:0 auto}
+.famous-grid h2{font-size:clamp(42px,6.5vw,88px);line-height:.9;font-weight:800;color:#fff;font-family:'Syne',sans-serif}
+.famous-grid h2 i{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;display:block;font-size:.68em;color:rgba(255,255,255,0.45)}
+.glass-form{background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.02));backdrop-filter:blur(40px);border:1px solid rgba(255,255,255,.10);border-radius:32px;padding:32px}
+.glass-form input,.glass-form select,.glass-form textarea{width:100%;background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,.12);padding:16px 0;color:#fff;font-size:13.5px;outline:none;font-family:'Poppins',sans-serif}
+.glass-btn-black{width:100%;background:#FFFFFF;color:#08080A;border:none;padding:15px;border-radius:100px;font-weight:600;font-size:11px;margin-top:24px;cursor:pointer;font-family:'Poppins',sans-serif}
+.glass-btn-blue{width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);color:#fff;padding:15px;border-radius:100px;font-weight:500;font-size:11px;margin-top:12px;display:flex;justify-content:center;text-decoration:none;font-family:'Poppins',sans-serif}
+.whatsapp{position:fixed;bottom:22px;right:22px;background:#FFFFFF;width:48px;height:48px;border-radius:100px;display:flex;align-items:center;justify-content:center;color:#08080A;font-size:14px;font-weight:700;z-index:200;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,0.3);font-family:'Poppins',sans-serif}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:110px;gap:32px}.p-grid{grid-template-columns:1fr}.price-grid{grid-template-columns:1fr}.price-card.popular{transform:scale(1)}.famous-grid{grid-template-columns:1fr}.glass-nav-wrapper{bottom:20px}.whatsapp{right:20px;bottom:90px}}
 </style>
 </head>
 <body>
 
 <div class="glass-nav-wrapper">
   <div class="glass-nav" id="glassNav">
-    <button class="glass-nav-btn active" data-target="home"><span class="text-desktop">Home</span><span class="icon-mobile">🏠</span></button>
-    <button class="glass-nav-btn" data-target="work"><span class="text-desktop">Projects</span><span class="icon-mobile">💼</span></button>
-    <button class="glass-nav-btn" data-target="pricing"><span class="text-desktop">Pricing</span><span class="icon-mobile">💰</span></button>
-    <button class="glass-nav-btn" data-target="famous"><span class="text-desktop">Contact</span><span class="icon-mobile">📩</span></button>
+    <button class="glass-nav-btn active" data-target="home">Home</button>
+    <button class="glass-nav-btn" data-target="work">Projects</button>
+    <button class="glass-nav-btn" data-target="pricing">Pricing</button>
+    <button class="glass-nav-btn" data-target="famous">Contact</button>
     <div class="glass-divider"></div>
-    <button class="theme-btn" id="themeToggle">🌙</button>
+    <button class="theme-btn" id="themeToggle">Theme</button>
   </div>
 </div>
 
 <section id="home" class="hero">
-<div class="reveal">
+<div class="reveal in">
 <h1>PROFESSIONAL <b>WEBSITE DESIGN & DEVELOPMENT</b></h1>
-<p>We build modern, responsive and high-performing WordPress & Custom Code Websites without paid plugins. Glassmorphism navigation, dark blue edition, 60fps motion graphics - all devices compatible. Built for growth.</p>
-<div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
-<a href="#famous" class="btn btn-primary">📅 BOOK FREE CONSULTATION</a>
-<a href="#work" class="btn btn-sec">📁 VIEW PORTFOLIO</a>
+<p>We build modern, responsive and high-performing WordPress and Custom Code Websites without paid plugins. Black and white premium glassmorphism navigation, 60fps motion graphics, all devices compatible. Built for growth.</p>
+<div style="display:flex;gap:10px;margin-top:28px;flex-wrap:wrap">
+<a href="#famous" class="btn btn-primary">BOOK FREE CONSULTATION</a>
+<a href="#work" class="btn btn-sec">VIEW PORTFOLIO</a>
 </div>
 </div>
-<div class="glass-card reveal">
-<div style="font-size:12px;opacity:.5;letter-spacing:2px;font-weight:800">GLASSMORPHISM EDITION</div>
-<div style="font-size:24px;font-weight:800;margin-top:8px;color:var(--cyan)">That Generate Leads & Make You Famous</div>
+<div class="glass-card reveal in">
+<div style="font-size:10px;opacity:.4;letter-spacing:1.5px;font-weight:600">BLACK AND WHITE PREMIUM EDITION</div>
+<div style="font-size:22px;font-weight:600;margin-top:8px;color:#fff;line-height:1.2">That Generate Leads and Make You Famous</div>
 <div class="glass-grid">
-<div class="glass-item">🌐 Glass Navigation<br><span style="opacity:.6">Framer Motion Lamp</span></div>
-<div class="glass-item">💻 Custom Code<br><span style="opacity:.6">No Paid Plugins</span></div>
-<div class="glass-item">⚡ 60fps Motion<br><span style="opacity:.6">Backdrop Blur 20px</span></div>
-<div class="glass-item">🎨 Dark Blue + Cyan<br><span style="opacity:.6">Glass + Glow Effect</span></div>
+<div class="glass-item"><span>NAVIGATION</span>Black White Glass Lamp</div>
+<div class="glass-item"><span>STACK</span>Custom Code No Plugins</div>
+<div class="glass-item"><span>MOTION</span>60fps Blur 40px</div>
+<div class="glass-item"><span>DESIGN</span>Black White Luxe Glow</div>
 </div>
-<div style="margin-top:22px;text-align:center"><a href="tel:+917020674916" style="color:var(--cyan);text-decoration:none;font-weight:800;font-size:18px">📞 7020674916</a></div>
+<div style="margin-top:22px;border-top:1px solid rgba(255,255,255,0.06);padding-top:14px"><a href="tel:+917020674916" style="color:#fff;text-decoration:none;font-weight:600;font-size:16px">7020674916</a></div>
 </div>
 </section>
 
 <section id="work" class="projects">
-<div class="sec-head reveal">
-<span class="badge">🔥 3 LIVE PROJECTS - GLASSMORPHISM NAVIGATION EDITION</span>
-<h2>Our Recent Work</h2>
-<p style="color:rgba(255,255,255,.5);margin-top:10px">Known Strangers • Designer Monk • Clutch GG - With Live Links + Glass UI</p>
+<div class="sec-head reveal" style="text-align:center;max-width:1200px;margin:0 auto">
+<span class="badge">3 LIVE PROJECTS - BLACK AND WHITE PREMIUM EDITION</span>
+<h2 style="font-size:clamp(32px,5vw,54px);font-weight:800;font-family:'Syne',sans-serif">Our Recent Work</h2>
+<p style="color:rgba(255,255,255,.45);margin-top:10px;font-weight:300">Known Strangers - Designer Monk - Clutch GG - Live Links and Premium Black White UI</p>
 </div>
 <div class="p-grid">
-<div class="p-card reveal"><div class="p-img"><span class="p-tag">Streetwear • Live • Glass UI</span><img src="images/known-strangers.jpg" alt="Known Strangers"></div><div class="p-info"><h3>Known Strangers®</h3><small style="color:var(--cyan)">Streetwear Brand - Live Project</small><p style="font-size:12.5px;color:rgba(255,255,255,.55);margin-top:8px">THE REVOLUTION OF STREETWEAR INDUSTRY. Dark, edgy brand website with glassmorphism navigation and 60fps motion.</p><div class="p-links"><a href="https://knownstrangers.in" target="_blank" class="link-primary">View Case Study →</a><a href="https://knownstrangers.in" target="_blank" class="link-sec">Live Site ↗</a></div></div></div>
-<div class="p-card reveal"><div class="p-img"><span class="p-tag">Interior • Mumbai • Live • Glass</span><img src="images/designer-monk.jpg" alt="Designer Monk"></div><div class="p-info"><h3>The Designer Monk</h3><small style="color:var(--cyan)">Interior Designers in Mumbai - Live</small><p style="font-size:12.5px;color:rgba(255,255,255,.55);margin-top:8px">Hassle-free home interiors guaranteed. Glassmorphism booking form, WhatsApp integration and local SEO.</p><div class="p-links"><a href="https://thedesignermonk.com" target="_blank" class="link-primary">View Case Study →</a><a href="https://thedesignermonk.com" target="_blank" class="link-sec">Live Site ↗</a></div></div></div>
-<div class="p-card reveal"><div class="p-img"><span class="p-tag">Gaming • Clutch GG • Live • Motion</span><img src="images/clutch-gg.jpg" onerror="this.src='https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600'" alt="Clutch GG"></div><div class="p-info"><h3>Clutch GG</h3><small style="color:var(--cyan)">Gaming / E-sports Brand - Live</small><p style="font-size:12.5px;color:rgba(255,255,255,.55);margin-top:8px">Gaming community platform with glassmorphism navigation, dark blue edition, 60fps motion graphics, all devices compatible.</p><div class="p-links"><a href="https://clutchgg.in" target="_blank" class="link-primary">View Case Study →</a><a href="https://clutchgg.in" target="_blank" class="link-sec">Live Site ↗</a></div></div></div>
+<div class="p-card reveal"><div class="p-img"><span class="p-tag">Streetwear - Live - Premium</span><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80&auto=format&fit=crop&sat=-100" alt="Known Strangers" style="filter:grayscale(20%) contrast(1.1)"></div><div class="p-info"><h3>Known Strangers</h3><small>Streetwear Brand - Live Project</small><p>THE REVOLUTION OF STREETWEAR INDUSTRY. Dark, edgy brand website with black and white premium glassmorphism navigation and 60fps motion.</p><div class="p-links"><a href="https://knownstrangers.in" target="_blank" class="link-primary">View Case Study</a><a href="https://knownstrangers.in" target="_blank" class="link-sec">Live Site</a></div></div></div>
+<div class="p-card reveal"><div class="p-img"><span class="p-tag">Interior - Mumbai - Live - Premium</span><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80&auto=format&fit=crop&sat=-100" alt="Designer Monk" style="filter:grayscale(15%) contrast(1.05)"></div><div class="p-info"><h3>The Designer Monk</h3><small>Interior Designers in Mumbai - Live</small><p>Hassle-free home interiors guaranteed. Black and white glassmorphism booking form, WhatsApp integration and local SEO - Premium Edition.</p><div class="p-links"><a href="https://thedesignermonk.com" target="_blank" class="link-primary">View Case Study</a><a href="https://thedesignermonk.com" target="_blank" class="link-sec">Live Site</a></div></div></div>
+<div class="p-card reveal"><div class="p-img"><span class="p-tag">Gaming - Clutch GG - Live - Premium</span><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80&auto=format&fit=crop&sat=-100" alt="Clutch GG" style="filter:grayscale(100%) contrast(1.1)"></div><div class="p-info"><h3>Clutch GG</h3><small>Gaming - E-sports Brand - Live</small><p>Gaming community platform with black and white premium glassmorphism navigation, 60fps motion graphics, all devices compatible.</p><div class="p-links"><a href="https://clutchgg.in" target="_blank" class="link-primary">View Case Study</a><a href="https://clutchgg.in" target="_blank" class="link-sec">Live Site</a></div></div></div>
 </div>
 </section>
 
 <section id="pricing" class="pricing">
-<div class="sec-head reveal">
-<span class="badge">🔥 20% OFF FOR FIRST 3 CLIENTS - GLASSMORPHISM NAVIGATION EDITION</span>
-<h2>Plans That Scale With You</h2>
-<p style="color:rgba(255,255,255,.5)">Glassmorphism, 60fps smooth, all devices compatible, dark blue motion graphics + glass nav</p>
+<div class="sec-head reveal" style="text-align:center;max-width:1200px;margin:0 auto">
+<span class="badge" style="background:#fff;color:#000">20 PERCENT OFF FOR FIRST 3 CLIENTS - BLACK WHITE PREMIUM</span>
+<h2 style="font-size:clamp(32px,5vw,54px);font-weight:800;font-family:'Syne',sans-serif">Plans That Scale With You</h2>
+<p style="color:rgba(255,255,255,.45);font-weight:300">Black and white premium, 60fps smooth, all devices compatible</p>
 </div>
 <div class="price-grid">
-<div class="price-card reveal"><h3>Starter</h3><div class="price">₹7,999 <small style="font-size:11px;display:block;margin-top:6px;opacity:.6"><s>₹9,999</s> • 20% OFF • First 3: ₹6,399 only</small></div><small style="color:var(--cyan);font-weight:700">Perfect for startups - Glass UI</small><ul><li>✓ 1 Page Modern Website</li><li>✓ Glassmorphism Navigation Bar</li><li>✓ Glass Morphism Dark Blue UI</li><li>✓ 60fps Motion Graphics + Lamp Effect</li><li>✓ Mobile Responsive - All Devices</li><li>✓ WhatsApp + Call 7020674916</li><li>✓ Basic SEO Setup</li></ul><a href="https://wa.me/917020674916?text=Hi!%20I%20want%20Starter%20Plan%207999%20-%2020%25%20OFF%20-%20Glass%20Nav%20Edition" class="btn-price btn-dark">CHOOSE STARTER - ₹7,999</a></div>
-<div class="price-card popular reveal"><div style="background:#fff;color:#000;font-size:10px;padding:5px 12px;border-radius:20px;display:inline-block;font-weight:800;margin-bottom:10px">MOST POPULAR 🔥 GLASS NAV EDITION</div><h3>Growth</h3><div class="price">₹14,999 <small style="font-size:11px;display:block;margin-top:6px;opacity:.8"><s>₹18,749</s> • 20% OFF • First 3: ₹11,999</small></div><small style="color:#fff;opacity:.9">For growing businesses - Most Loved</small><ul><li>✓ 5 Pages + Blog + Glass Nav Effects</li><li>✓ Premium Glass Morphism Dark Blue</li><li>✓ Advanced Motion Graphics 60fps</li><li>✓ Glassmorphism Navigation with Lamp</li><li>✓ All Devices Compatible - Smooth</li><li>✓ Lead Forms + Email + CRM</li><li>✓ SEO + Speed Optimization</li><li>✓ Known Strangers Style UI</li></ul><a href="https://wa.me/917020674916?text=Hi!%20I%20want%20Growth%20Plan%2014999%20-%2020%25%20OFF%20-%20Glass%20Nav" class="btn-price btn-cyan">CHOOSE GROWTH - ₹14,999</a></div>
-<div class="price-card reveal"><h3>Scale</h3><div class="price">₹24,999 <small style="font-size:11px;display:block;margin-top:6px;opacity:.6"><s>₹31,249</s> • 20% OFF • First 3: ₹19,999</small></div><small style="color:var(--cyan);font-weight:700">For brands that want fame - Full Glass</small><ul><li>✓ Unlimited Pages - Glass Nav Edition</li><li>✓ Custom Code + Dark Blue Glass Nav</li><li>✓ Designer Monk Level UI + Motion</li><li>✓ E-commerce + Booking + Glow + Lamp</li><li>✓ Advanced Animations + Framer Motion</li><li>✓ Full Brand System - Famous</li><li>✓ Priority Support 7020674916</li></ul><a href="https://wa.me/917020674916?text=Hi!%20I%20want%20Scale%20Plan%2024999%20-%2020%25%20OFF%20-%20Glass%20Nav" class="btn-price btn-light">CHOOSE SCALE - ₹24,999</a></div>
+<div class="price-card reveal"><h3 style="font-family:'Syne',sans-serif">Starter</h3><div class="price">Rs. 7,999 <small style="font-size:10.5px;display:block;margin-top:6px;opacity:.5"><s>Rs. 9,999</s> - First 3: Rs. 6,399 only</small></div><small style="color:rgba(255,255,255,0.6)">Perfect for startups - Black White Premium</small><ul><li>1 Page Modern Website</li><li>Black and White Glassmorphism Navigation</li><li>60fps Motion Graphics and Lamp Effect</li><li>Mobile Responsive - All Devices</li><li>WhatsApp and Call 7020674916</li><li>Basic SEO Setup</li></ul><a href="https://wa.me/917020674916?text=Hi!%20I%20want%20Starter%20Plan%207999%20-%20Black%20White%20Premium" class="btn-price btn-dark">CHOOSE STARTER - Rs. 7,999</a></div>
+<div class="price-card popular reveal"><div style="background:#08080A;color:#fff;font-size:9.5px;padding:5px 12px;border-radius:100px;display:inline-block;font-weight:600;margin-bottom:10px;font-family:'Poppins',sans-serif">MOST POPULAR - BLACK WHITE PREMIUM</div><h3 style="font-family:'Syne',sans-serif">Growth</h3><div class="price">Rs. 14,999 <small style="font-size:10.5px;display:block;margin-top:6px;opacity:.6"><s>Rs. 18,749</s> - First 3: Rs. 11,999</small></div><small style="opacity:.7">For growing businesses - Most Loved</small><ul><li>5 Pages and Blog and Glass Nav Effects</li><li>Premium Black White Glass Morphism</li><li>Advanced Motion Graphics 60fps</li><li>Glassmorphism Navigation with Lamp</li><li>All Devices Compatible - Smooth</li><li>Lead Forms and Email and CRM</li><li>SEO and Speed Optimization</li><li>Known Strangers Style Black White UI</li></ul><a href="https://wa.me/917020674916?text=Hi!%20I%20want%20Growth%20Plan%2014999%20-%20Black%20White%20Premium" class="btn-price" style="background:#08080A;color:#fff">CHOOSE GROWTH - Rs. 14,999</a></div>
+<div class="price-card reveal"><h3 style="font-family:'Syne',sans-serif">Scale</h3><div class="price">Rs. 24,999 <small style="font-size:10.5px;display:block;margin-top:6px;opacity:.5"><s>Rs. 31,249</s> - First 3: Rs. 19,999</small></div><small style="color:rgba(255,255,255,0.6)">For brands that want fame - Full Premium</small><ul><li>Unlimited Pages - Black White Premium</li><li>Custom Code and Black White Glass Nav</li><li>Designer Monk Level UI and Motion</li><li>E-commerce and Booking and Glow and Lamp</li><li>Advanced Animations and Framer Motion</li><li>Full Brand System - Famous</li><li>Priority Support 7020674916</li></ul><a href="https://wa.me/917020674916?text=Hi!%20I%20want%20Scale%20Plan%2024999%20-%20Black%20White%20Premium" class="btn-price btn-light">CHOOSE SCALE - Rs. 24,999</a></div>
 </div>
 </section>
 
 <section id="famous" class="famous-wrap">
 <div class="famous-grid">
 <div class="reveal">
-<h2>LET'S MA<br><i>you famous.</i></h2>
+<h2>LET'S MAKE <i>you famous.</i></h2>
 <div style="margin-top:44px">
-<small style="font-size:11px;letter-spacing:2.5px;opacity:.4;font-weight:800">EMAIL</small>
-<a href="mailto:velodigital.co@gmail.com" style="display:block;color:#fff;text-decoration:none;margin-top:8px;font-weight:600;font-size:18px">velodigital.co@gmail.com</a>
-<a href="mailto:velodigitalco@gmail.com" style="display:block;color:rgba(255,255,255,.6);font-size:14px;margin-top:10px;text-decoration:none">velodigitalco@gmail.com</a>
-<div style="margin-top:16px;font-size:14px;color:#fff">📞 +91 7020674916</div>
+<small style="font-size:10px;letter-spacing:2px;opacity:.4;font-weight:600">EMAIL</small>
+<a href="mailto:velodigital.co@gmail.com" style="display:block;color:#fff;text-decoration:none;margin-top:8px;font-weight:500;font-size:17px">velodigital.co@gmail.com</a>
+<a href="mailto:velodigitalco@gmail.com" style="display:block;color:rgba(255,255,255,.5);font-size:13px;margin-top:8px;text-decoration:none">velodigitalco@gmail.com</a>
+<div style="margin-top:16px;font-size:13px;color:rgba(255,255,255,0.8);font-weight:500">+91 7020674916</div>
 </div>
 </div>
 <div class="glass-form reveal">
-<h3 style="font-size:11px;letter-spacing:2.5px;opacity:.7;font-weight:800;margin-bottom:28px">START A PROJECT</h3>
+<h3 style="font-size:10px;letter-spacing:2px;opacity:.5;font-weight:600;margin-bottom:24px">START A PROJECT</h3>
 <form action="https://formsubmit.co/velodigital.co@gmail.com" method="POST">
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Enquiry - Glassmorphism Navigation Edition - 7020674916">
-<label style="font-size:11px;opacity:.5">Your Name *</label>
-<input name="name" required placeholder="Your Name *">
-<label style="font-size:11px;opacity:.5;margin-top:16px;display:block">WhatsApp *</label>
-<input name="whatsapp" required placeholder="WhatsApp *">
-<label style="font-size:11px;opacity:.5;margin-top:16px;display:block">Select Package *</label>
+<input type="hidden" name="_subject" value="New Enquiry - Black and White Premium - Poppins - 7020674916">
+<label style="font-size:10px;opacity:.5">Your Name</label>
+<input name="name" required placeholder="Your Name">
+<label style="font-size:10px;opacity:.5;margin-top:16px;display:block">WhatsApp</label>
+<input name="whatsapp" required placeholder="WhatsApp Number">
+<label style="font-size:10px;opacity:.5;margin-top:16px;display:block">Select Package</label>
 <select name="package" required>
-<option value="">Select Package *</option>
-<option>Starter - ₹7,999 (20% OFF - ₹6,399 for first 3) - Glass Nav Edition</option>
-<option>Growth - ₹14,999 (20% OFF - ₹11,999 for first 3) - Most Popular</option>
-<option>Scale - ₹24,999 (20% OFF - ₹19,999 for first 3) - Full Glass Nav</option>
+<option value="">Select Package</option>
+<option>Starter - Rs. 7,999 (First 3: Rs. 6,399) - Black White Premium - Poppins</option>
+<option>Growth - Rs. 14,999 (First 3: Rs. 11,999) - Most Popular Black White - Poppins</option>
+<option>Scale - Rs. 24,999 (First 3: Rs. 19,999) - Full Black White Premium - Poppins</option>
 </select>
-<label style="font-size:11px;opacity:.5;margin-top:16px;display:block">Project Details</label>
-<textarea name="project" rows="3" placeholder="Project..."></textarea>
-<div style="display:flex;gap:10px;margin:18px 0 0;font-size:11px;line-height:1.4;opacity:.6;align-items:flex-start"><input type="checkbox" id="terms" required style="width:16px;height:16px"><label for="terms">I agree to <a href="#legal" style="color:#7DD3FC">Terms & Legal Agreement</a>. Any scam/fraud by client is punishable under IT Act & IPC, agency can take legal action including FIR & recovery with 18% interest. Copyright reserved by Velo Digital Co.</label></div>
-<button style="width:100%;background:#fff;color:#000;border:none;padding:16px;border-radius:100px;font-weight:800;font-size:11px;letter-spacing:1.5px;margin-top:24px;cursor:pointer">SEND ENQUIRY</button>
-<a href="tel:+917020674916" style="text-decoration:none"><div style="width:100%;background:#1E3A8A;color:#fff;padding:16px;border-radius:100px;font-weight:800;font-size:11px;margin-top:12px;display:flex;justify-content:center">📞 CONTACT US - CALL 7020674916</div></a>
+<label style="font-size:10px;opacity:.5;margin-top:16px;display:block">Project Details</label>
+<textarea name="project" rows="3" placeholder="Tell us about your project"></textarea>
+<div style="display:flex;gap:10px;margin:18px 0 0;font-size:10.5px;line-height:1.5;opacity:.6"><input type="checkbox" id="terms" required style="width:14px;height:14px"><label for="terms">I agree to Terms and Legal Agreement. Copyright reserved by Velo Digital Co.</label></div>
+<button class="glass-btn-black">SEND ENQUIRY</button>
+<a href="tel:+917020674916" class="glass-btn-blue">CONTACT US - CALL 7020674916</a>
 </form>
 </div>
 </div>
 </section>
 
-<div id="legal" style="padding:28px 5%;background:#050711;color:rgba(255,255,255,.4);font-size:11.5px;line-height:1.7;border-top:1px solid rgba(255,255,255,.06)">
-<b style="color:#fff;font-size:12px">LEGAL AGREEMENT - VELO DIGITAL CO - GLASSMORPHISM NAVIGATION EDITION</b><br><br>
-1. Service: Design/dev with glassmorphism navigation, dark blue edition, 60fps motion graphics, lamp effect, all devices compatible.<br>
-2. Payment: 50% advance, non-refundable. 20% OFF for first 3 clients valid for 7999/14999/24999 plans only.<br>
-3. Anti-Scam & Fraud Clause: Any fraudulent payment, chargeback after delivery, fake identity, scam attempt by client is punishable under Indian IT Act 2000 & IPC 415, 420. Agency reserves right to take legal action including FIR, civil recovery with 18% interest.<br>
-4. Copyright: © 2026 Velo Digital Co. All Rights Reserved. Glassmorphism Navigation Edition - Dark Blue - Motion Graphics - 60fps.<br>
-5. Contact: +91 7020674916 - velodigital.co@gmail.com / velodigitalco@gmail.com<br><br>
-<span style="color:#fff;font-weight:700">© 2026 VELODIGITAL.CO • GLASSMORPHISM NAVIGATION EDITION • BUILT FOR GROWTH • DARK BLUE • LAMP EFFECT • 60FPS • 7020674916</span>
+<div id="legal" style="padding:28px 5%;background:#050507;color:rgba(255,255,255,.45);font-size:11px;line-height:1.7;border-top:1px solid rgba(255,255,255,.06);font-family:'Poppins',sans-serif">
+<b style="color:#fff;font-size:11px;font-weight:600">LEGAL AGREEMENT - VELO DIGITAL CO - BLACK AND WHITE PREMIUM - POPPINS EDITION</b><br><br>
+1. Service: Black and white premium design and development with Poppins and Syne premium fonts, glassmorphism navigation, 60fps motion graphics, lamp effect, all devices compatible.<br>
+2. Payment: 50 percent advance, non-refundable. 20 percent OFF for first 3 clients valid for 7999, 14999, 24999 plans only.<br>
+3. Copyright: Copyright 2026 Velo Digital Co. All Rights Reserved. Black and White Premium Edition - Poppins Edition.<br>
+4. Contact: +91 7020674916 - velodigital.co@gmail.com<br><br>
+<span style="color:#fff;font-weight:600;font-size:10px">2026 VELODIGITAL.CO - BLACK AND WHITE PREMIUM - POPPINS - SYNE - LAMP EFFECT - 60FPS - 7020674916</span>
 </div>
 
-<a class="whatsapp" href="https://wa.me/917020674916?text=Hey!%20I%20want%207999%2F14999%2F24999%20plan%20-%2020%25%20OFF%20-%20Glass%20Nav%20Edition%20-%20Velo%20Digital%20Co%20%F0%9F%9A%80" target="_blank">💬</a>
+<a class="whatsapp" href="https://wa.me/917020674916?text=Hi!%20I%20want%20Black%20White%20Premium%20Poppins%20Plan" target="_blank">WA</a>
 
 <script>
 const navBtns = document.querySelectorAll('.glass-nav-btn');
@@ -194,9 +194,45 @@ navBtns.forEach(btn=>{
     setActive(target);
     const el = document.getElementById(target);
     if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
-  });
+  },{passive:true});
 });
 let ticking=false;
+let lastScroll=0;
 window.addEventListener('scroll',()=>{
+  lastScroll = window.scrollY;
   if(!ticking){
-    reque
+    requestAnimationFrame(()=>{
+      let current='home';
+      sections.forEach(id=>{
+        const el=document.getElementById(id);
+        if(el && lastScroll >= el.offsetTop - 250) current=id;
+      });
+      setActive(current);
+      ticking=false;
+    });
+    ticking=true;
+  }
+},{passive:true});
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      observer.unobserve(e.target);
+    }
+  });
+}, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t) t.scrollIntoView({behavior:'smooth'});
+  });
+});
+document.querySelectorAll('.p-card, .price-card, .glass-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{el.style.willChange='transform'},{passive:true});
+  el.addEventListener('mouseleave',()=>{el.style.willChange='auto'},{passive:true});
+});
+</script>
+</body>
+</html>
