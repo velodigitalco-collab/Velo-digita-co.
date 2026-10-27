@@ -2,171 +2,148 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>VELODIGITAL.CO — Premium Websites That Sell</title>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velo Digital Co - Professional Website Design & Development</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* === CUT FIX - MOST IMPORTANT === */
-html{width:100%;overflow-x:hidden;max-width:100vw}
-body{width:100%;max-width:100vw;overflow-x:hidden;margin:0;background:#FFFEF9;color:#0E0E0E}
-*{box-sizing:border-box;max-width:100%} 
-img,div,section{max-width:100%}
-*{font-family:'Syne',sans-serif} .serif{font-family:'Instrument Serif',serif}
-
-/* === TUJHA CINEMATIC THEME PALLET - SAME === */
-.film-grain{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50;opacity:0.05;mix-blend-mode:overlay;background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.4"/></svg>')}
-.bg-grid-theme{background-size:60px 60px;background-image:linear-gradient(to right,rgba(0,0,0,0.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(0,0,0,0.05) 1px,transparent 1px);mask-image:radial-gradient(ellipse at center,black 0%,transparent 70%)}
-.text-3d-matte{color:#0E0E0E;text-shadow:0 10px 30px rgba(0,0,0,0.15),0 2px 4px rgba(0,0,0,0.1)}
-.text-silver-matte{background:linear-gradient(180deg,#0E0E0E 0%,rgba(14,14,14,0.45) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 8px 16px rgba(0,0,0,0.12))}
-.text-card-silver-matte{background:linear-gradient(180deg,#FFFFFF 0%,#A1A1AA 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 12px 24px rgba(0,0,0,0.8))}
-.premium-depth-card{background:linear-gradient(145deg,#162C6D 0%,#0A101D 100%);box-shadow:0 40px 100px -20px rgba(0,0,0,0.9),0 20px 40px -20px rgba(0,0,0,0.8),inset 0 1px 2px rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.06)}
-.btn-modern-light{background:linear-gradient(180deg,#FFF 0%,#F1F5F9 100%);box-shadow:0 0 0 1px rgba(0,0,0,0.05),0 2px 4px rgba(0,0,0,0.1),0 12px 24px -4px rgba(0,0,0,0.3),inset 0 1px 1px #fff}
-.btn-modern-dark{background:linear-gradient(180deg,#27272A 0%,#18181B 100%);color:#fff;box-shadow:0 0 0 1px rgba(255,255,255,0.1),0 2px 4px rgba(0,0,0,0.6),0 12px 24px -4px rgba(0,0,0,0.9),inset 0 1px 1px rgba(255,255,255,0.15)}
-
-/* === GLASS MORPHISM === */
-.glass{backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(255,254,249,0.9);border-bottom:1px solid rgba(14,14,14,0.08)}
-.glass-card{backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);background:rgba(255,255,255,0.78);border:1.5px solid rgba(14,14,14,0.08);box-shadow:0 20px 60px rgba(14,14,14,0.06)}
-.glass-dark{backdrop-filter:blur(20px);background:rgba(14,14,14,0.88)}
-.marquee{white-space:nowrap;overflow:hidden;border-top:1.5px solid #0E0E0E;border-bottom:1.5px solid #0E0E0E}
-.marquee-track{display:inline-flex;animation:marq 20s linear infinite} @keyframes marq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}} .float{animation:float 7s ease-in-out infinite}
-.loader-line{overflow:hidden;line-height:0.88} .loader-line span{display:block;transform:translateY(110%)}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',sans-serif}
+:root{--navy:#081B33;--cyan:#0EA5E9;--light:#F8FAFC}
+html{scroll-behavior:smooth}
+body{background:var(--light);overflow-x:hidden}
+header{position:fixed;top:0;width:100%;z-index:100;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);padding:10px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e2e8f0}
+.logo{font-size:19px;font-weight:800;color:var(--navy);letter-spacing:-.5px}.logo span{color:var(--cyan)}
+.nav-cta{padding:7px 16px;font-size:12.5px;background:var(--navy);color:#fff;border-radius:20px;text-decoration:none;font-weight:600}
+.hero{padding:130px 5% 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;max-width:1300px;margin:0 auto}
+.hero h1{font-size:clamp(32px,4.5vw,54px);line-height:1.05;color:var(--navy);font-weight:800}.hero h1 b{color:var(--cyan)}
+.hero p{margin-top:14px;color:#475569;line-height:1.6}
+.btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{padding:13px 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:14px;display:inline-flex;gap:6px;transition:.3s}
+.btn-primary{background:var(--cyan);color:#fff;box-shadow:0 8px 20px rgba(14,165,233,.3)}.btn-sec{border:1.5px solid var(--navy);color:var(--navy);background:#fff}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.f-card{background:#fff;border:1px solid #e2e8f0;padding:18px;border-radius:14px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.04)}
+.f-card b{font-size:16px;color:var(--navy);display:block}.f-card small{font-size:12px;color:#64748b}
+.projects{padding:70px 5%;background:#fff}.section-title{text-align:center}.section-title h2{font-size:clamp(28px,4vw,42px);color:var(--navy)}.section-title p{color:#64748b;margin-top:6px}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;max-width:1200px;margin:0 auto;margin-top:40px}
+.p-card{background:#fff;border:1px solid #e2e8f0;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06);transition:.4s}.p-card:hover{transform:translateY(-6px)}
+.p-img-box{height:360px;background:#f1f5f9;overflow:hidden;position:relative}.p-img-box img{width:100%;height:100%;object-fit:cover}
+.p-tag{position:absolute;top:12px;left:12px;background:var(--navy);color:#fff;font-size:10px;padding:5px 10px;border-radius:20px}
+.p-info{padding:18px}.p-info h3{font-size:17px;color:var(--navy)}.p-info small{color:var(--cyan);font-weight:600;font-size:12px}.p-info p{font-size:12.5px;color:#64748b;margin-top:8px;line-height:1.5}
+.p-links{display:flex;gap:8px;margin-top:14px}.p-links a{flex:1;text-align:center;padding:8px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none}.link-primary{background:var(--cyan);color:#fff}.link-sec{border:1px solid #cbd5e1;color:var(--navy)}
+.industries{padding:50px 5%;background:#081B33;color:#fff;text-align:center}.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:800px;margin:30px auto 0}.ind-item{background:rgba(255,255,255,.06);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,.1)}
+.form-sec{padding:70px 5%;background:var(--navy);color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:50px}
+input,textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #1e3a5f;background:#0f2747;color:#fff;margin-top:6px;outline:none;font-size:14px}input:focus,textarea:focus{border-color:var(--cyan)}
+.check-wrap{display:flex;gap:10px;margin:16px 0;font-size:12px;line-height:1.4;align-items:flex-start}.check-wrap a{color:var(--cyan)}
+.submit{width:100%;padding:14px;background:var(--cyan);border:none;border-radius:10px;color:#fff;font-weight:800;font-size:15px;cursor:pointer}.submit:disabled{background:#334155;cursor:not-allowed}
+.legal{padding:26px 5%;background:#020c1c;color:#94a3b8;font-size:11.5px;line-height:1.7;border-top:1px solid #1e293b}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff;z-index:200;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:110px}.features{grid-template-columns:1fr 1fr}.project-grid{grid-template-columns:1fr}.form-sec{grid-template-columns:1fr}.ind-grid{grid-template-columns:1fr 1fr}.p-img-box{height:500px}}
 </style>
 </head>
 <body>
-<div class="film-grain"></div>
 
-<!-- LOADING - SUT-SUTIT SPACING -->
-<div id="loader" class="fixed inset-0 z-[9999] bg-[#FFFEF9] flex flex-col justify-center p-[5vw] w-full max-w-full">
-<div class="flex justify-between text-[10px] font-[700] tracking-[0.2em] mb-auto w-full"><span>VELODIGITAL.CO • PREMIUM</span><span id="cnt">0%</span></div>
-<div class="space-y-[1.8vw] w-full">
-<div class="loader-line w-full"><span class="block text-[11.5vw] md:text-[8vw] leading-[0.88] tracking-[-0.05em] font-[800] l-t w-full">WE DON'T</span></div>
-<div class="loader-line w-full"><span class="block text-[11.5vw] md:text-[8vw] leading-[0.88] tracking-[-0.04em] serif italic font-[400] ml-[5vw] l-t w-full">do marketing.</span></div>
-<div class="loader-line w-full"><span class="block text-[11.5vw] md:text-[8vw] leading-[0.88] tracking-[-0.05em] font-[800] text-[#162C6D] l-t w-full">WE BUILD SITES.</span></div>
-</div>
-<div class="absolute bottom-0 left-0 h-[3px] bg-[#162C6D] w-0" id="bar"></div>
-</div>
+<header>
+  <div class="logo">VELO <span>DIGITAL CO</span></div>
+  <a href="#contact" class="nav-cta">Contact Us - 7020674916</a>
+</header>
 
-<!-- NAV - CUT FIX -->
-<nav class="fixed top-0 left-0 right-0 w-full max-w-full z-50 glass flex justify-between items-center px-4 md:px-10 h-[64px] md:h-[72px]">
-<div class="flex items-center gap-2.5 shrink-0"><div class="w-[26px] h-[26px] md:w-[30px] md:h-[30px] bg-[#162C6D] rounded-full shadow-[0_0_20px_rgba(22,44,109,0.5)]"></div><span class="font-[800] text-[15px] md:text-[19px] tracking-[-0.03em] whitespace-nowrap">VELODIGITAL<span class="text-[#162C6D]">.</span>CO</span></div>
-<a href="tel:+917020674916" class="shrink-0 bg-[#0E0E0E] text-white px-4 md:px-6 py-2.5 md:py-3 text-[10px] md:text-[11px] font-[700] tracking-[0.08em] rounded-full whitespace-nowrap">CONTACT US —</a>
-</nav>
-
-<!-- HERO - FULL WIDTH FIX -->
-<section class="pt-[64px] md:pt-[72px] w-full max-w-full relative overflow-hidden">
-<div class="bg-grid-theme absolute inset-0 w-full pointer-events-none opacity-50"></div>
-<div class="absolute top-[10%] left-[5%] w-[300px] h-[300px] bg-[#162C6D]/18 rounded-full blur-[70px] float"></div>
-<div class="absolute bottom-[10%] right-[5%] w-[340px] h-[340px] bg-[#FFD600]/10 rounded-full blur-[80px] float" style="animation-delay:-3s"></div>
-
-<div class="relative z-10 w-full max-w-full px-4 md:px-10 py-10 md:py-20">
-<!-- TEXT - NO CUT -->
-<div class="w-full max-w-full">
-<h1 class="w-full text-3d-matte text-[10vw] md:text-[6.8vw] leading-[0.88] tracking-[-0.05em] font-[700] hero-t">Track the journey,</h1>
-<h1 class="w-full text-silver-matte text-[10vw] md:text-[6.8vw] leading-[0.88] tracking-[-0.05em] font-[800] hero-t">not just the days.</h1>
-<p class="mt-5 w-full max-w-[90%] md:max-w-[520px] text-[15px] md:text-[19px] leading-[1.45] tracking-[-0.01em] opacity-60 serif hero-t">We build premium glassmorphic websites that sell while you sleep. No templates. Just results.</p>
-</div>
-
-<!-- CARDS - FULL WIDTH, NO CUT -->
-<div class="mt-10 md:mt-16 w-full max-w-full grid grid-cols-1 md:grid-cols-12 gap-4">
-<!-- MAIN CARD - CINEMATIC THEME -->
-<div class="md:col-span-7 w-full max-w-full premium-depth-card p-6 md:p-10 rounded-[20px] md:rounded-[32px] relative overflow-hidden">
-<div class="absolute inset-0 w-full bg-[radial-gradient(600px_circle_at_50%_0%,rgba(255,255,255,0.07),transparent_40%)]"></div>
-<div class="relative z-10 w-full">
-<div class="text-[10px] tracking-[0.18em] text-white/40 font-[700] w-full">ACCOUNTABILITY, REDEFINED. — VELODIGITAL.CO</div>
-<h3 class="mt-4 w-full text-[24px] md:text-[38px] leading-[0.9] tracking-[-0.02em] font-[700] text-card-silver-matte">Premium sites that convert visitors into customers.</h3>
-<p class="mt-4 w-full text-[13px] md:text-[15px] leading-[1.5] text-white/55">VELODIGITAL.CO builds structured accountability, precise tracking, beautiful timelines. Work: Known Strangers, Designer Monk, ClutchGG. Email: velodigital.co@gmail.com | Phone: 7020674916</p>
-<div class="mt-6 flex flex-wrap gap-2.5 w-full">
-<a href="#enquiry" class="btn-modern-light px-6 py-3 rounded-full text-[11px] font-[700] tracking-[0.06em]">START PROJECT —</a>
-<a href="tel:+917020674916" class="btn-modern-dark px-6 py-3 rounded-full text-[11px] font-[700] tracking-[0.06em]">CONTACT US</a>
-</div>
-</div>
-</div>
-
-<!-- SIDE CARDS -->
-<div class="md:col-span-5 w-full max-w-full flex flex-col gap-3">
-<div class="w-full glass-card p-4 md:p-5 rounded-[16px] md:rounded-[20px] flex justify-between text-[10px] font-[700] tracking-[0.12em]"><span>BASE: INDIA</span><span>EST: 2023</span><span>03 PROJECTS</span></div>
-<div class="w-full glass-card p-4 md:p-5 rounded-[16px] md:rounded-[20px]"><div class="text-[10px] tracking-[0.18em] opacity-40 font-[700]">EMAIL • PHONE</div><div class="mt-1.5 w-full text-[12px] md:text-[13px] font-[600] break-all leading-[1.3]">velodigital.co@gmail.com</div><div class="text-[12px] md:text-[13px] font-[600]">+91 7020674916</div></div>
-<div class="w-full glass-card p-4 md:p-5 rounded-[16px] md:rounded-[20px] bg-[#162C6D] text-white border-[#162C6D]"><div class="text-[20px] md:text-[26px] font-[800] tracking-[-0.02em]">₹7,999 — ₹24,999+</div><div class="text-[10px] opacity-70 mt-1 tracking-[0.06em]">20% OFF LIVE • 2 SLOTS LEFT • GLASS EDITION</div></div>
-</div>
-</div>
-</div>
+<section class="hero">
+  <div>
+    <h1>PROFESSIONAL <br><b>WEBSITE DESIGN &<br>DEVELOPMENT</b></h1>
+    <p>We build modern, responsive and high-performing WordPress & Custom Code Websites without paid plugins. Fast. Secure. Responsive. Built for Results.</p>
+    <div class="btns">
+      <a href="#contact" class="btn btn-primary">📅 BOOK FREE CONSULTATION</a>
+      <a href="#work" class="btn btn-sec">📁 VIEW OUR PORTFOLIO ONLINE</a>
+    </div>
+    <div class="features">
+      <div class="f-card"><b>From ₹25,000</b><small>Get a Professional Website</small></div>
+      <div class="f-card"><b>2-3 Weeks</b><small>Launch Your Business Online</small></div>
+      <div class="f-card"><b>100+ Websites</b><small>Delivered Successfully</small></div>
+      <div class="f-card"><b>Free</b><small>Website Consultation</small></div>
+    </div>
+  </div>
+  <div style="background:linear-gradient(135deg,var(--navy),#123a6b);border-radius:20px;padding:24px;color:#fff">
+    <div style="font-size:14px;opacity:.8">We Build Modern Websites</div>
+    <div style="font-size:24px;font-weight:800;margin-top:6px;color:var(--cyan)">That Generate Leads</div>
+    <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;font-size:11px">
+      <div style="background:rgba(255,255,255,.08);padding:12px;border-radius:10px;text-align:center">🌐 Modern & Responsive<br>Lightweight & Fast</div>
+      <div style="background:rgba(255,255,255,.08);padding:12px;border-radius:10px;text-align:center">💻 Custom Code<br>Without Paid Plugins</div>
+      <div style="background:rgba(255,255,255,.08);padding:12px;border-radius:10px;text-align:center">⚡ High Performance<br>& SEO Friendly</div>
+    </div>
+    <div style="margin-top:20px;text-align:center"><a href="tel:+917020674916" style="color:var(--cyan);text-decoration:none;font-weight:700">📞 7020674916</a></div>
+  </div>
 </section>
 
-<div class="marquee py-3 md:py-4 w-full max-w-full glass-dark text-white"><div class="marquee-track text-[11px] md:text-[13px] font-[700] tracking-[0.2em]"><span>★ PREMIUM WEBSITES ★ GLASSMORPHISM ★ CINEMATIC THEME ★ BRAND KIT ★ ECOMMERCE ★ SEO ★ PERFORMANCE ★ &nbsp;</span><span>★ PREMIUM WEBSITES ★ GLASSMORPHISM ★ CINEMATIC THEME ★ BRAND KIT ★ ECOMMERCE ★ SEO ★ PERFORMANCE ★ &nbsp;</span></div></div>
-
-<!-- WORK - FULL INFO -->
-<section id="work" class="w-full max-w-full px-4 md:px-10 py-12 md:py-24">
-<div class="w-full flex flex-wrap justify-between items-end gap-4 mb-8 md:mb-14"><h2 class="text-[36px] md:text-[68px] leading-[0.88] tracking-[-0.04em] font-[800]">SELECTED<br>WORK</h2><span class="serif text-[14px] md:text-[18px] italic glass-card px-5 py-2 rounded-full">[2023 — 2026] • 03 PROJECTS</span></div>
-<div class="w-full max-w-full grid grid-cols-1 md:grid-cols-3 gap-4">
-<div class="w-full glass-card p-5 md:p-8 rounded-[20px] md:rounded-[28px] hover:-translate-y-1.5 transition-all duration-500"><div class="w-full border-[1.5px] border-black aspect-[4/3] bg-[#ECEAFF] rounded-[14px] md:rounded-[18px] flex items-center justify-center font-[800] text-[14px]">KNOWN STRANGERS</div><div class="mt-5 w-full flex justify-between items-center"><span class="font-[700] text-[13px]">Known Strangers • Fashion</span><a href="https://knownstrangers.in/" target="_blank" class="text-[11px] font-[700] underline">LIVE →</a></div><p class="text-[11px] opacity-40 mt-1">Ecommerce • Premium UI • velodigital.co@gmail.com</p></div>
-<div class="w-full glass-card p-5 md:p-8 rounded-[20px] md:rounded-[28px] hover:-translate-y-1.5 transition-all duration-500"><div class="w-full border-[1.5px] border-black aspect-[4/3] bg-[#FFF4D6] rounded-[14px] md:rounded-[18px] flex items-center justify-center font-[800] text-[14px]">DESIGNER MONK</div><div class="mt-5 w-full flex justify-between items-center"><span class="font-[700] text-[13px]">Designer Monk • Luxury</span><a href="https://thedesignermonk.in/" target="_blank" class="text-[11px] font-[700] underline">LIVE →</a></div><p class="text-[11px] opacity-40 mt-1">Storytelling • Branding</p></div>
-<div class="w-full glass-card p-5 md:p-8 rounded-[20px] md:rounded-[28px] hover:-translate-y-1.5 transition-all duration-500"><div class="w-full border-[1.5px] border-black aspect-[4/3] bg-[#0E0E0E] text-white rounded-[14px] md:rounded-[18px] flex items-center justify-center serif text-[20px] md:text-[24px]">ClutchGG</div><div class="mt-5 w-full flex justify-between items-center"><span class="font-[700] text-[13px]">ClutchGG • Gaming</span><a href="https://clutchgg.in/" target="_blank" class="text-[11px] font-[700] underline">LIVE →</a></div><p class="text-[11px] opacity-40 mt-1">Community • Platform • 7020674916</p></div>
-</div>
+<section id="work" class="projects">
+  <div class="section-title">
+    <h2>Our Recent Work</h2>
+    <p>Live Projects - Known Strangers & The Designer Monk + Business Pro</p>
+  </div>
+  <div class="project-grid">
+    <div class="p-card">
+      <div class="p-img-box"><span class="p-tag">Streetwear • E-commerce</span><img src="images/known-strangers.jpg" onerror="this.src='https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600'" alt="Known Strangers"></div>
+      <div class="p-info"><h3>Known Strangers®</h3><small>First Project - Streetwear Brand</small><p>THE REVOLUTION OF STREETWEAR INDUSTRY. Dark, edgy brand website with bold visuals and modern e-commerce experience.</p><div class="p-links"><a href="#" class="link-primary">View Case Study →</a><a href="https://wa.me/917020674916" class="link-sec">Live Site</a></div></div>
+    </div>
+    <div class="p-card">
+      <div class="p-img-box"><span class="p-tag">Interior • Mumbai</span><img src="images/designer-monk.jpg" onerror="this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600'" alt="Designer Monk"></div>
+      <div class="p-info"><h3>The Designer Monk</h3><small>Second Project - Interior Designers in Mumbai</small><p>Interior Designers in Mumbai. Hassle-free home interiors guaranteed. Optimized for leads, booking form, and local SEO.</p><div class="p-links"><a href="#" class="link-primary">View Case Study →</a><a href="https://wa.me/917020674916" class="link-sec">Live Site</a></div></div>
+    </div>
+    <div class="p-card">
+      <div class="p-img-box"><span class="p-tag">Business • Custom Code</span><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Business"></div>
+      <div class="p-info"><h3>Business Pro Website</h3><small>Third Project - Lead Generation</small><p>High-converting landing page for service businesses. Lead forms, SEO optimized, blazing fast. Built for results.</p><div class="p-links"><a href="#" class="link-primary">View Case Study →</a><a href="https://wa.me/917020674916" class="link-sec">Live Site</a></div></div>
+    </div>
+  </div>
 </section>
 
-<!-- PRICING - FULL INFO -->
-<section class="w-full max-w-full px-4 md:px-10 py-12 md:py-20 bg-[#0E0E0E] text-[#FFFEF9] relative overflow-hidden">
-<div class="absolute top-0 left-0 w-[600px] h-[600px] max-w-full bg-[#162C6D]/22 rounded-full blur-[120px] pointer-events-none"></div>
-<div class="relative z-10 w-full max-w-full">
-<div class="w-full flex flex-wrap justify-between gap-6 mb-10"><h2 class="text-[12vw] md:text-[7vw] leading-[0.8] tracking-[-0.05em] font-[800]">PRICING THAT WORKS.</h2><div class="glass-card bg-white/10 border-white/10 p-5 md:p-6 rounded-[20px] max-w-full md:max-w-[340px] w-full"><p class="serif text-[16px] md:text-[18px] leading-[1.3]">20% OFF for first 3 customers. Glass morphism + cinematic theme included.</p><div class="mt-4 text-[10px] tracking-[0.15em] font-[700]">🔥 2 SLOTS LEFT</div></div></div>
-<div class="w-full max-w-full grid grid-cols-1 md:grid-cols-3 gap-4">
-<div class="w-full glass-card bg-white/[0.04] border-white/10 p-6 md:p-8 rounded-[20px] md:rounded-[28px] flex flex-col"><div class="text-[10px] tracking-[0.2em] opacity-40 font-[700]">STARTER / 01</div><div class="mt-6 text-[36px] md:text-[44px] font-[800] tracking-[-0.03em]">₹7,999</div><p class="text-[11px] opacity-50 mt-1">Small businesses & portfolios</p><ul class="mt-6 space-y-2 text-[12px] opacity-70 leading-[1.4]"><li>✓ Up to 3 Pages</li><li>✓ Custom Logo + Glass UI</li><li>✓ Mobile Responsive + Cinematic Theme</li><li>✓ Basic SEO • 30 Days Support</li></ul><a href="tel:+917020674916" class="mt-8 w-full border border-white/15 py-3.5 text-center text-[11px] font-[700] rounded-full">CHOOSE STARTER</a></div>
-<div class="w-full glass-card bg-[#162C6D] border-white/15 p-6 md:p-8 rounded-[20px] md:rounded-[28px] flex flex-col shadow-[0_20px_60px_rgba(22,44,109,0.4)]"><div class="text-[10px] bg-white text-black inline-block px-3 py-1 rounded-full font-[700] w-fit">MOST POPULAR / 02</div><div class="mt-6 text-[36px] md:text-[44px] font-[800] tracking-[-0.03em]">₹14,999</div><p class="text-[11px] opacity-70 mt-1">Growing brands & companies</p><ul class="mt-6 space-y-2 text-[12px] leading-[1.4]"><li>✓ Up to 7 Pages • Brand Kit • Glass Theme</li><li>✓ Advanced SEO + Analytics</li><li>✓ Contact Forms • Cinematic Animations</li><li>✓ 60 Days Priority Support</li></ul><a href="tel:+917020674916" class="mt-8 w-full bg-white text-black py-3.5 text-center text-[11px] font-[700] rounded-full">CHOOSE BUSINESS —</a></div>
-<div class="w-full glass-card bg-white/[0.05] border-white/10 p-6 md:p-8 rounded-[20px] md:rounded-[28px] flex flex-col"><div class="text-[10px] tracking-[0.2em] opacity-40 font-[700]">PREMIUM / 03</div><div class="mt-6 text-[36px] md:text-[44px] font-[800] tracking-[-0.03em]">₹24,999+</div><p class="text-[11px] opacity-50 mt-1">Established & ecommerce</p><ul class="mt-6 space-y-2 text-[12px] opacity-60 leading-[1.4]"><li>✓ Up to 15+ Pages • Full Branding</li><li>✓ Ecommerce / CMS Ready</li><li>✓ Full Glass Morphism + Motion</li><li>✓ 90 Days Support + Maintenance</li></ul><a href="tel:+917020674916" class="mt-8 w-full border border-white/15 py-3.5 text-center text-[11px] font-[700] rounded-full">CHOOSE PREMIUM</a></div>
-</div>
-</div>
+<section class="industries">
+  <h2 style="color:var(--cyan)">WE BUILD WEBSITES FOR INDUSTRY</h2>
+  <div class="ind-grid">
+    <div class="ind-item">🏫<br><b>Schools</b></div>
+    <div class="ind-item">🏥<br><b>Healthcare</b></div>
+    <div class="ind-item">☁️<br><b>SaaS</b></div>
+    <div class="ind-item">💼<br><b>Businesses</b></div>
+  </div>
 </section>
 
-<!-- ENQUIRY - CUT FIX -->
-<section id="enquiry" class="w-full max-w-full px-4 md:px-10 py-12 md:py-24 relative overflow-hidden">
-<div class="absolute bottom-0 right-0 w-[500px] h-[500px] max-w-full bg-[#162C6D]/10 rounded-full blur-[100px] pointer-events-none"></div>
-<div class="relative z-10 w-full max-w-full grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10">
-<div class="md:col-span-7 w-full max-w-full">
-<h2 class="w-full text-[11vw] md:text-[6.5vw] leading-[0.85] tracking-[-0.04em] font-[800]">LET'S MAKE<br><span class="serif italic font-[400]">you famous.</span></h2>
-<div class="mt-8 w-full flex flex-wrap gap-8 text-[11px] font-[700] tracking-[0.08em]"><div class="min-w-0"><div class="opacity-30">EMAIL</div><div class="mt-1.5 text-[13px] lowercase break-all leading-[1.3]">velodigital.co@gmail.com</div></div><div><div class="opacity-30">PHONE</div><div class="mt-1.5 text-[13px]">+91 7020674916</div></div></div>
-<div class="mt-8 w-full glass-card p-5 rounded-[18px] max-w-full md:max-w-[380px] flex items-center gap-4"><div class="w-10 h-10 bg-[#162C6D] rounded-full shrink-0"></div><div class="min-w-0"><div class="font-[800] text-[15px]">VELODIGITAL.CO</div><div class="text-[10px] opacity-40 tracking-[0.12em] truncate">PREMIUM WEB STUDIO • GLASS EDITION</div></div></div>
-</div>
-
-<div class="md:col-span-5 w-full max-w-full glass-card p-5 md:p-8 rounded-[20px] md:rounded-[32px]">
-<div class="text-[11px] tracking-[0.18em] mb-5 font-[700] w-full">START A PROJECT — 2 MIN FORM</div>
-<form id="form" class="space-y-4 w-full max-w-full">
-<input id="name" required placeholder="Your Name *" class="w-full max-w-full border-b border-black/15 py-3 bg-transparent text-[13px] outline-none focus:border-[#162C6D]">
-<input id="phone" required placeholder="WhatsApp Number *" class="w-full max-w-full border-b border-black/15 py-3 bg-transparent text-[13px] outline-none focus:border-[#162C6D]">
-<select id="pkg" required class="w-full max-w-full border-b border-black/15 py-3 bg-transparent text-[13px] outline-none"><option value="">Select Package *</option><option>Starter - Rs 7,999</option><option>Business - Rs 14,999</option><option>Premium - Rs 24,999+</option></select>
-<textarea id="msg" placeholder="Tell us about your project..." class="w-full max-w-full border-b border-black/15 py-3 bg-transparent text-[13px] h-[70px] outline-none"></textarea>
-<button class="w-full max-w-full bg-[#0E0E0E] text-white py-4 text-[11px] font-[700] tracking-[0.1em] rounded-full">SEND ENQUIRY —</button>
-</form>
-<div class="w-full max-w-full mt-4 space-y-2.5">
-<a href="tel:+917020674916" class="block w-full max-w-full bg-[#162C6D] text-white py-4 text-center text-[11px] font-[800] tracking-[0.12em] rounded-full shadow-[0_12px_32px_rgba(22,44,109,0.4)]">📞 CONTACT US — CALL NOW</a>
-<a href="https://wa.me/917020674916" target="_blank" class="block w-full max-w-full bg-[#0E0E0E] text-white py-3.5 text-center text-[10px] font-[700] tracking-[0.1em] rounded-full">💬 WHATSAPP — 7020674916</a>
-<p class="text-[9px] text-center opacity-30 tracking-[0.05em] w-full">DIRECT REDIRECT TO +91 7020674916</p>
-</div>
-</div>
-</div>
-
-<div class="mt-12 w-full max-w-full border-t border-black/10 pt-6 flex flex-wrap justify-between gap-2 text-[10px] font-[600] opacity-50"><span class="break-all">©2026 VELODIGITAL.CO • velodigital.co@gmail.com • GLASS EDITION • CINEMATIC THEME</span><span>BUILT FOR GROWTH</span></div>
+<section id="contact" class="form-sec">
+  <div>
+    <h2 style="font-size:clamp(28px,4vw,42px);line-height:1.1">Let's Build Your<br><span style="color:var(--cyan)">Online Presence</span></h2>
+    <p style="margin-top:12px;color:#94a3b8;line-height:1.6">Projects like Known Strangers & Designer Monk delivered in 2-3 weeks. Starting from ₹25,000. 100+ websites delivered. Contact: 7020674916</p>
+    <div style="margin-top:28px;background:#0f2747;padding:16px;border-radius:12px;border:1px solid #1e3a5f">
+      <div style="font-size:13px;font-weight:600">📞 Call / WhatsApp</div><div style="font-size:20px;font-weight:800;color:var(--cyan);margin-top:4px">+91 7020674916</div>
+      <div style="font-size:12px;color:#94a3b8;margin-top:6px">Lonavala • Pune • Mumbai • Remote Worldwide</div>
+    </div>
+  </div>
+  <form action="https://formsubmit.co/velodigitalco@gmail.com" method="POST" id="mainForm">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Lead - Velo Digital Co">
+    <label style="font-size:13px">Full Name *</label><input name="name" required placeholder="Your Name">
+    <label style="font-size:13px;margin-top:10px;display:block">Email *</label><input name="email" type="email" required placeholder="you@company.com">
+    <label style="font-size:13px;margin-top:10px;display:block">Phone *</label><input name="phone" required placeholder="7020674916">
+    <label style="font-size:13px;margin-top:10px;display:block">Project Details</label><textarea name="message" rows="4" placeholder="Tell us about your project"></textarea>
+    <div class="check-wrap"><input type="checkbox" id="terms" required><label for="terms">I agree to the <a href="#legal">Terms & Conditions and Legal Agreement</a>. I understand any scam/fraudulent activity from client side is punishable and Velo Digital Co can take legal action. Copyright reserved by Velo Digital Co.</label></div>
+    <button class="submit" id="submitBtn" type="submit" disabled>Submit & Book Consultation</button>
+    <p style="font-size:11px;color:#64748b;margin-top:8px;text-align:center">Your info goes directly to our email + WhatsApp 7020674916</p>
+  </form>
 </section>
+
+<div id="legal" class="legal">
+  <b style="color:#e2e8f0;font-size:13px">LEGAL AGREEMENT & TERMS - VELO DIGITAL CO</b><br><br>
+    1. <b>Service:</b> Design/dev on best-effort basis. No false guarantee.<br>
+    2. <b>Payment:</b> 50% advance, non-refundable once work starts.<br>
+    3. <b>Client Duty:</b> Provide content/access on time.<br>
+    4. <b>Anti-Scam & Fraud Clause:</b> Any fraudulent payment, chargeback after delivery, fake identity or scam attempt by client is punishable under Indian IT Act 2000 & IPC 415, 420. Velo Digital Co reserves right to take legal action including FIR, civil recovery with 18% interest.<br>
+    5. <b>IP:</b> Final site after full payment.<br>
+    6. <b>Copyright:</b> © 2026 Velo Digital Co. All Rights Reserved. No content/design/code may be copied without written permission.<br>
+    7. <b>Jurisdiction:</b> Lonavala / Pune only.<br>
+    8. <b>Contact:</b> +91 7020674916 - velodigitalco@gmail.com<br><br>
+  <span style="color:#e2e8f0;font-weight:700">© 2026 Velo Digital Co. All Rights Reserved | velodigitalco.com | Contact: +91 7020674916</span>
+</div>
+
+<a class="whatsapp" href="https://wa.me/917020674916?text=Hey!%20I%27m%20interested%20to%20work%20with%20you%20-%20Velo%20Digital%20Co%20%F0%9F%9A%80%20I%20saw%20your%20work%20for%20Known%20Strangers%20%26%20Designer%20Monk" target="_blank">💬</a>
 
 <script>
-// LOADER
-let c=0,bar=document.getElementById('bar'),cnt=document.getElementById('cnt');
-let iv=setInterval(()=>{c+=3;if(c>100)c=100;bar.style.width=c+'%';cnt.innerText=c+'%';if(c>=100)clearInterval(iv)},14);
-gsap.to(".l-t",{y:0,duration:1.2,stagger:0.14,ease:"power4.out",delay:0.2});
-gsap.to("#loader",{yPercent:-100,duration:1.2,ease:"power4.inOut",delay:2.2,onComplete:()=>{document.getElementById('loader').style.display='none';document.body.style.overflow='auto'}});
-document.body.style.overflow='hidden';
-// LENIS
-const lenis=new Lenis({duration:1.6,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
-function raf(t){lenis.raf(t);requestAnimationFrame(raf)}requestAnimationFrame(raf);
-gsap.registerPlugin(ScrollTrigger); lenis.on('scroll',ScrollTrigger.update);
-gsap.from(".hero-t",{y:80,opacity:0,duration:1.1,stagger:0.1,ease:"power4.out",delay:2.4});
-gsap.utils.toArray(".glass-card").forEach(card=>{gsap.fromTo(card,{y:30,opacity:0},{y:0,opacity:1,duration:0.9,ease:"power3.out",scrollTrigger:{trigger:card,start:"top 90%"}})});
-
-document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();let n=document.getElementById('name').value,p=document.getElementById('phone').value,pk=document.getElementById('pkg').value,m=document.getElementById('msg').value;let txt=`Hi!%20New%20Enquiry%0AName:${n}%0APhone:${p}%0APackage:${pk}%0AMsg:${m}`;window.open(`https://wa.me/917020674916?text=${txt}`,'_blank')});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t) t.scrollIntoView({behavior:'smooth'})})});
+const cb=document.getElementById('terms');const btn=document.getElementById('submitBtn');cb.addEventListener('change',()=>{btn.disabled=!cb.checked;btn.style.opacity=cb.checked?'1':'.6'});
 </script>
 </body>
 </html>
