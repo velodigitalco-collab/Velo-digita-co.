@@ -1,129 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Velo Digital | Premium Sites That Sell | Dapoli | By Beasty - 7020674916</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELODIGITAL.CO — Premium Websites That Sell</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
 <style>
-  html.lenis,html.lenis body{height:auto}
-  body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#fff;overflow-x:hidden}
-  .glass-white{background:rgba(255,255,255,0.96);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.8);box-shadow:0 25px 80px rgba(0,0,0,0.3),inset 0 1px 0 #fff;color:#111;border-radius:28px}
-  .glass-dark{background:rgba(255,255,255,0.06);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:28px}
-  .syne{font-family:'Syne',sans-serif}
-  input,select,textarea{background:#fff;border:1px solid #e5e5e5;color:#111}
-  input:focus,select:focus,textarea:focus{border-color:#111;outline:none}
-  const lenis=new Lenis({duration:1.5});function raf(t){lenis.raf(t);requestAnimationFrame(raf)}requestAnimationFrame(raf);
-gsap.registerPlugin(ScrollTrigger);lenis.on('scroll',ScrollTrigger.update);
-gsap.from(".hero-t",{y:120,opacity:0,duration:1.2,stagger:0.15,ease:"power4.out"});
-gsap.utils.toArray(".glass-white").forEach(c=>{gsap.fromTo(c,{y:60,opacity:0},{y:0,opacity:1,duration:1,scrollTrigger:{trigger:c,start:"top 85%"}})});
-  /* SPACING FIX - SUT SUTIT */
-body{line-height:1.8 !important}
-.glass-white{padding:40px !important}
-#pricing .grid, #work .grid{gap:40px !important}
-#enquiry .grid{gap:60px !important}
-section{padding-top:100px !important;padding-bottom:100px !important}
-p{line-height:1.8 !important}
+:root{--bg:#FFFEF9;--ink:#0E0E0E;--blue:#3D5AFE}
+*{font-family:'Syne',sans-serif} .serif{font-family:'Instrument Serif',serif}
+body{background:var(--bg);color:var(--ink);overflow-x:hidden}
+.nav-border{border-bottom:1.5px solid var(--ink)} .card-border{border:1.5px solid var(--ink)}
+.marquee{white-space:nowrap;overflow:hidden;border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink)}
+.marquee-track{display:inline-flex;animation:marq 20s linear infinite}
+@keyframes marq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.logo-dot{color:var(--blue)}
 </style>
 </head>
 <body>
-<div id="cursor" class="hidden lg:block fixed w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(255,255,255,0.07)_0%,transparent_70%)] pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2"></div>
-
-<nav class="fixed top-0 w-full z-40 bg-white/85 backdrop-blur-2xl border-b border-black/5">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-black syne text-black">VELO DIGITAL<span class="text-[9px] font-normal tracking-widest text-zinc-500 ml-3">DAPOLI • BY BEASTY • 7020674916</span></h1>
-    <a href="#enquiry" class="bg-black text-white px-6 py-2.5 rounded-full font-bold text-xs">Claim 20% OFF →</a>
-  </div>
+<!-- NAV with PREMIUM LOGO -->
+<nav class="fixed top-0 w-full bg-[#FFFEF9] z-50 nav-border flex justify-between items-center px-6 md:px-12 h-[72px]">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-[#3D5AFE] rounded-full"></div>
+<span class="font-[800] text-[18px] tracking-[-0.02em]">VELODIGITAL<span class="logo-dot">.</span>CO</span>
+</div>
+<div class="hidden md:flex gap-8 text-[11px] font-[700] tracking-[0.15em]"><a href="#work">WORK</a><a href="#services">SERVICES</a><a href="#plans">PLANS</a></div>
+<a href="tel:+917020674916" class="bg-[#0E0E0E] text-white px-6 py-3 text-[11px] font-[700]">CONTACT US —</a>
 </nav>
 
-<!-- HERO + QUOTE -->
-<section class="min-h-[90vh] pt-32 pb-10 px-6 max-w-7xl mx-auto flex flex-col justify-center">
-  <div class="inline-flex glass-dark px-4 py-2 text-[11px] tracking-widest w-fit mb-6"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></span>BASED IN DAPOLI • 7020674916 • 20% OFF FOR FIRST 3 CUSTOMERS</div>
-  <h1 class="text-[12vw] md:text-[8rem] font-black leading-[0.82] tracking-tighter syne">
-    <span class="block hero-t">WE BUILD</span><span class="block hero-t text-white/30">PREMIUM</span><span class="block hero-t">SITES THAT SELL.</span>
-  </h1>
-  <div class="mt-10 grid md:grid-cols-2 gap-10">
-    <div class="flex gap-3"><a href="#pricing" class="glass-white px-7 py-3.5 rounded-full text-sm font-bold !rounded-full">View Packages</a><a href="#enquiry" class="bg-white text-black px-7 py-3.5 rounded-full text-sm font-bold">Enquire Now</a></div>
-    <div class="flex gap-4">
-      <div class="w-[2px] bg-gradient-to-b from-white to-transparent"></div>
-      <div><p class="text-[22px] font-medium leading-[1.3]">A premium website is not an expense.<br><span class="font-light text-zinc-400">It's your best-performing sales asset.</span></p><div class="w-10 h-[1px] bg-white/10 my-4"></div><p class="text-[13px] text-zinc-500">Design builds trust. Trust builds business. That is why we build premium.</p><div class="flex items-center gap-3 mt-4"><div class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center font-black text-xs">B</div><div><p class="text-xs font-bold">BEASTY</p><p class="text-[10px] text-zinc-500">FOUNDER • DAPOLI • 7020674916</p></div></div></div>
-    </div>
-  </div>
+<section class="pt-[72px]">
+<div class="px-6 md:px-12 py-12 md:py-20 nav-border">
+<h1 class="text-[12vw] md:text-[10vw] leading-[0.85] tracking-[-0.05em] font-[800]">
+<span class="block hero-t">WE DON'T</span>
+<span class="block hero-t serif italic font-[400] ml-[8vw]">do marketing.</span>
+<span class="block hero-t ml-[2vw]">WE BUILD</span>
+<span class="block hero-t text-[#3D5AFE]">WEBSITES THAT SELL.</span>
+</h1>
+<div class="mt-12 grid md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-5"><p class="text-[20px] md:text-[26px] leading-[1.2] serif">Premium sites for brands that want more than likes.<br><span class="text-[14px] font-[600]">velodigital.co@gmail.com</span></p></div>
+<div class="md:col-span-4 md:col-start-9 flex flex-col gap-4">
+<div class="flex gap-4 text-[10px] font-[700]"><span>BASE: INDIA</span><span>EST: 2023</span></div>
+<div class="card-border p-4 flex justify-between items-center cursor-pointer" onclick="document.querySelector('#work').scrollIntoView({behavior:'smooth'})"><span class="text-[12px] font-[700]">SEE SELECTED WORK [03]</span><span>→</span></div>
+</div>
+</div>
+</div>
+<div class="marquee py-4 bg-[#0E0E0E] text-white"><div class="marquee-track text-[13px] font-[700] tracking-[0.2em]"><span>★ PREMIUM WEBSITES ★ BRAND KIT ★ ECOMMERCE ★ SEO ★ PERFORMANCE ★ &nbsp;</span><span>★ PREMIUM WEBSITES ★ BRAND KIT ★ ECOMMERCE ★ SEO ★ PERFORMANCE ★ &nbsp;</span></div></div>
 </section>
 
-<!-- PROJECTS -->
-<section id="work" class="px-6 max-w-7xl mx-auto py-12">
-  <div class="flex justify-between items-end mb-8"><h2 class="text-4xl font-black syne">SELECTED WORK</h2><p class="text-xs text-zinc-500">DAPOLI CRAFT • 7020674916</p></div>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="glass-white p-7 hover:-translate-y-2 transition"><h3 class="font-bold">Known Strangers</h3><p class="text-xs text-zinc-500 mt-1">Fashion - Premium E-commerce</p><a href="https://knownstrangers.in/" target="_blank" class="mt-4 block bg-black text-white py-3 rounded-full text-center text-sm font-bold">View Live →</a></div>
-    <div class="glass-white p-7 hover:-translate-y-2 transition"><h3 class="font-bold">The Designer Monk</h3><p class="text-xs text-zinc-500 mt-1">Luxury Brand</p><a href="https://thedesignermonk.in/" target="_blank" class="mt-4 block bg-black text-white py-3 rounded-full text-center text-sm font-bold">View Live →</a></div>
-    <div class="glass-white p-7 hover:-translate-y-2 transition"><h3 class="font-bold">ClutchGG</h3><p class="text-xs text-zinc-500 mt-1">Gaming Platform</p><a href="https://clutchgg.in/" target="_blank" class="mt-4 block bg-black text-white py-3 rounded-full text-center text-sm font-bold">View Live →</a></div>
-  </div>
+<section id="work" class="px-6 md:px-12 py-20">
+<div class="flex justify-between items-end mb-12"><h2 class="text-[48px] md:text-[72px] leading-[0.9] font-[800]">SELECTED<br>WORK</h2><span class="serif text-[18px] italic">[2023 — 2026]</span></div>
+<div class="grid md:grid-cols-3 gap-[1.5px] bg-[#0E0E0E] card-border">
+<div class="bg-[#FFFEF9] p-8 md:p-10"><div class="card-border aspect-[4/3] bg-[#ECEAFF] flex items-center justify-center font-[800]">KNOWN STRANGERS</div><div class="mt-6 flex justify-between"><h3 class="font-[700] text-[14px]">Known Strangers</h3><a href="https://knownstrangers.in/" target="_blank" class="text-[11px] underline">LIVE →</a></div></div>
+<div class="bg-[#FFFEF9] p-8 md:p-10"><div class="card-border aspect-[4/3] bg-[#FFF4D6] flex items-center justify-center font-[800]">DESIGNER MONK</div><div class="mt-6 flex justify-between"><h3 class="font-[700] text-[14px]">Designer Monk</h3><a href="https://thedesignermonk.in/" target="_blank" class="text-[11px] underline">LIVE →</a></div></div>
+<div class="bg-[#FFFEF9] p-8 md:p-10"><div class="card-border aspect-[4/3] bg-[#0E0E0E] text-white flex items-center justify-center serif text-[24px]">ClutchGG</div><div class="mt-6 flex justify-between"><h3 class="font-[700] text-[14px]">ClutchGG</h3><a href="https://clutchgg.in/" target="_blank" class="text-[11px] underline">LIVE →</a></div></div>
+</div>
 </section>
 
-<!-- PACKAGES 20% OFF -->
-<section id="pricing" class="px-6 max-w-7xl mx-auto py-20">
-  <div class="text-center mb-12">
-    <div class="inline-block glass-white px-10 py-3 rounded-full font-black text-xl">LAUNCH OFFER Get 20% OFF</div>
-    <h2 class="text-5xl md:text-6xl font-black syne mt-8">Premium Pricing</h2>
-    <p class="text-zinc-400 text-sm mt-3">Choose the perfect package to launch or grow your business online</p>
-    <div class="inline-flex mt-4 glass-dark px-5 py-2 rounded-full text-xs"><b>🔥 20% OFF valid for first 3 customers only - 2 slots left! • Call: 7020674916</b></div>
-  </div>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="glass-white p-8 text-center"><p class="font-semibold text-zinc-600">Starter</p><h3 class="text-4xl font-black mt-2">Rs 7,999</h3><p class="text-zinc-500 text-[13px] mt-2">Perfect for small businesses & portfolios</p><div class="mt-6 text-left space-y-2 text-[13px]"><p>✓ Up to 3 Pages</p><p>✓ Custom Logo Design</p><p>✓ Mobile Responsive</p><p>✓ Basic SEO Setup</p><p>✓ Email Support — 30 Days</p></div><button onclick="selectPkg('Starter - Rs 7,999')" class="mt-6 w-full border border-black rounded-full py-3 font-bold text-sm">Get Started</button></div>
-    <div class="glass-white p-8 text-center bg-white scale-[1.03] shadow-[0_30px_100px_rgba(255,255,255,0.2)] relative"><div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] px-4 py-1 rounded-full font-black">MOST POPULAR</div><p class="font-semibold">Business</p><h3 class="text-4xl font-black mt-2">Rs 14,999</h3><p class="text-zinc-600 text-[13px] mt-2">Ideal for growing brands & companies</p><div class="mt-6 text-left space-y-2 text-[13px] font-medium"><p>✓ Up to 7 Pages</p><p>✓ Custom Logo + Brand Kit</p><p>✓ Mobile Responsive</p><p>✓ Advanced SEO + Analytics</p><p>✓ Contact Forms & Integration</p><p>✓ Priority Support — 60 Days</p></div><button onclick="selectPkg('Business - Rs 14,999')" class="mt-6 w-full bg-black text-white rounded-full py-3 font-bold text-sm">Get Started</button></div>
-    <div class="glass-white p-8 text-center"><p class="font-semibold text-zinc-600">Premium</p><h3 class="text-4xl font-black mt-2">Rs 24,999+</h3><p class="text-zinc-500 text-[13px] mt-2">For established businesses & ecommerce</p><div class="mt-6 text-left space-y-2 text-[13px]"><p>✓ Up to 15+ Pages</p><p>✓ Full Branding — Logo, Colors, Typography</p><p>✓ Ecommerce Ready / CMS Integration</p><p>✓ Advanced SEO + Performance</p><p>✓ Dedicated Support — 90 Days</p><p>✓ Ongoing Maintenance & Updates</p></div><button onclick="selectPkg('Premium - Rs 24,999+')" class="mt-6 w-full border border-black rounded-full py-3 font-bold text-sm">Get Started</button></div>
-  </div>
-  <p class="text-center text-[11px] tracking-widest text-zinc-500 mt-8">Clean modern design • 100% Responsive • Revisions Included • Secure & Fast • Dapoli • 7020674916</p>
+<section id="services" class="nav-border border-t">
+<div class="px-6 md:px-12 py-8 flex justify-between text-[11px] font-[700] tracking-[0.2em]"><span>SERVICES / CAPABILITIES</span><span>©2026 VELODIGITAL.CO</span></div>
+<div class="divide-y-[1.5px] divide-[#0E0E0E] border-y-[1.5px] border-[#0E0E0E]">
+<div class="service-row px-6 md:px-12 py-12 md:py-16 flex justify-between items-center hover:bg-[#0E0E0E] hover:text-white transition-colors"><span class="text-[10vw] md:text-[6vw] leading-[0.9] font-[800]">WEBSITES</span><span class="serif text-[16px] max-w-[220px] text-right">Premium, fast, conversion-first.</span></div>
+<div class="service-row px-6 md:px-12 py-12 md:py-16 flex justify-between items-center hover:bg-[#3D5AFE] hover:text-white transition-colors"><span class="text-[10vw] md:text-[6vw] leading-[0.9] font-[800]">BRANDING</span><span class="serif text-[16px] max-w-[220px] text-right">Logo, colors, typography that sells.</span></div>
+<div class="service-row px-6 md:px-12 py-12 md:py-16 flex justify-between items-center hover:bg-[#0E0E0E] hover:text-white transition-colors"><span class="text-[10vw] md:text-[6vw] leading-[0.9] font-[800]">GROWTH</span><span class="serif text-[16px] max-w-[220px] text-right">SEO + Performance that scales.</span></div>
+</div>
 </section>
 
-<!-- ENQUIRY FORM WITH CONTACT + PACKAGE SELECT -->
-<section id="enquiry" class="px-6 max-w-7xl mx-auto py-20">
-  <div class="grid md:grid-cols-2 gap-6">
-    <div class="glass-dark p-8 md:p-10">
-      <h2 class="text-5xl font-black syne leading-[0.9]">Enquire<br><span class="text-white/30">Now.</span></h2>
-      <p class="mt-3 text-sm text-zinc-400">Based in Dapoli. First 3 get 20% OFF. Reply in 2 hours on WhatsApp.</p>
-      <div class="mt-8 space-y-3">
-        <div class="glass-white p-4 flex gap-3 items-center text-sm font-bold">📍 DAPOLI, MAHARASHTRA - STUDIO</div>
-        <div class="glass-white p-4 flex gap-3 items-center text-sm font-bold">💬 WHATSAPP / CALL: 7020674916</div>
-        <div class="glass-white p-4 flex gap-3 items-center text-sm font-bold">✉️ velodigital.co@gmail.com</div>
-      </div>
-      <div class="mt-8 inline-flex glass-dark px-6 py-3 rounded-full text-xs">CRAFTED WITH ❤ BY BEASTY • DAPOLI • 7020674916 • 20% OFF LIVE</div>
-    </div>
-    <form id="form" class="glass-white p-8 md:p-10 space-y-4">
-      <h3 class="font-bold text-lg">Get Your 20% OFF - Contact Form</h3>
-      <div class="grid grid-cols-2 gap-3">
-        <input id="name" required placeholder="Your Name *" class="rounded-full px-5 py-4 text-sm">
-        <input id="phone" required placeholder="WhatsApp * - 7020674916" class="rounded-full px-5 py-4 text-sm">
-      </div>
-      <input id="business" placeholder="Business Name" class="rounded-full px-5 py-4 text-sm w-full">
-      <select id="package" required class="rounded-full px-5 py-4 text-sm w-full">
-        <option value="">Select Package *</option>
-        <option>Starter - Rs 7,999</option>
-        <option>Business - Rs 14,999 (Most Popular)</option>
-        <option>Premium - Rs 24,999+</option>
-        <option>Custom - Tell us</option>
-      </select>
-      <textarea id="msg" rows="4" placeholder="Your project details..." class="rounded-[1.5rem] px-5 py-4 text-sm w-full"></textarea>
-      <button type="submit" class="w-full bg-black text-white rounded-full py-4 font-bold text-sm hover:scale-[1.02] transition">Send Enquiry on WhatsApp → 7020674916</button>
-      <p class="text-center text-[10px] text-zinc-500">20% OFF for first 3 • Based in Dapoli • By Beasty</p>
-    </form>
-  </div>
+<section id="plans" class="px-6 md:px-12 py-20 bg-[#0E0E0E] text-[#FFFEF9]">
+<div class="flex flex-wrap justify-between items-start gap-8 mb-16"><h2 class="text-[14vw] md:text-[9vw] leading-[0.8] font-[800]">PRICING<br>THAT<br>WORKS.</h2><div class="card-border border-white p-6 max-w-[320px]"><p class="serif text-[18px]">20% OFF for first 3 customers. Premium craft, global standard.</p><div class="mt-6 text-[11px] tracking-[0.15em]">🔥 2 SLOTS LEFT • velodigital.co@gmail.com</div></div></div>
+<div class="grid md:grid-cols-3 gap-[1.5px] bg-white">
+<div class="bg-[#0E0E0E] p-8 md:p-10 flex flex-col"><div class="text-[11px] tracking-[0.2em] mb-8">STARTER / 01</div><h3 class="text-[30px] font-[800] leading-[0.9]">STARTER<br>SITE</h3><div class="mt-8 text-[48px] font-[800]">₹7,999</div><ul class="mt-8 space-y-3 text-[13px] opacity-80"><li>✓ Up to 3 Pages</li><li>✓ Custom Logo Design</li><li>✓ Mobile Responsive</li><li>✓ Basic SEO Setup</li><li>✓ Email Support 30 Days</li></ul><button onclick="selectPkg('Starter - Rs 7,999')" class="mt-auto pt-12 w-full card-border border-white py-4 text-[11px] font-[700]">CHOOSE STARTER</button></div>
+<div class="bg-[#3D5AFE] p-8 md:p-10 flex flex-col text-white"><div class="text-[11px] bg-white text-black inline-block px-3 py-1 w-fit font-[700]">MOST POPULAR / 02</div><h3 class="text-[30px] font-[800] leading-[0.9] mt-8">BUSINESS<br>SITE</h3><div class="mt-8 text-[48px] font-[800]">₹14,999</div><ul class="mt-8 space-y-3 text-[13px]"><li>✓ Up to 7 Pages</li><li>✓ Logo + Brand Kit</li><li>✓ Advanced SEO + Analytics</li><li>✓ Contact Forms & Integration</li><li>✓ Priority Support 60 Days</li></ul><button onclick="selectPkg('Business - Rs 14,999')" class="mt-auto pt-12 w-full bg-white text-black py-4 text-[11px] font-[700]">CHOOSE BUSINESS —</button></div>
+<div class="bg-[#FFFEF9] text-black p-8 md:p-10 flex flex-col"><div class="text-[11px] tracking-[0.2em] mb-8">PREMIUM / 03</div><h3 class="text-[30px] font-[800] leading-[0.9]">PREMIUM<br>SCALE</h3><div class="mt-8 text-[48px] font-[800]">₹24,999+</div><ul class="mt-8 space-y-3 text-[13px] opacity-70"><li>✓ Up to 15+ Pages</li><li>✓ Full Branding System</li><li>✓ Ecommerce / CMS Ready</li><li>✓ Advanced SEO + Performance</li><li>✓ Support 90 Days + Maintenance</li></ul><button onclick="selectPkg('Premium - Rs 24,999+')" class="mt-auto pt-12 w-full card-border border-black py-4 text-[11px] font-[700]">CHOOSE PREMIUM</button></div>
+</div>
 </section>
 
-<footer class="text-center py-10 text-[11px] text-zinc-600">© 2026 VELO DIGITAL • DAPOLI • BUILT BY BEASTY • 7020674916 • 20% OFF FOR FIRST 3</footer>
+<section id="enquiry" class="px-6 md:px-12 py-20">
+<div class="grid md:grid-cols-12 gap-12">
+<div class="md:col-span-7"><h2 class="text-[12vw] md:text-[7vw] leading-[0.85] font-[800]">LET'S MAKE<br><span class="serif italic font-[400]">you famous.</span></h2><div class="mt-12 flex gap-12 text-[11px] font-[700]"><div><div class="opacity-50">EMAIL</div><div class="mt-2 text-[14px] lowercase">velodigital.co@gmail.com</div></div><div><div class="opacity-50">PHONE</div><div class="mt-2 text-[14px]">7020674916</div></div></div>
+<div class="mt-12 card-border p-6 max-w-[360px] flex items-center gap-4"><div class="w-12 h-12 bg-[#3D5AFE] rounded-full"></div><div><div class="font-[800]">VELODIGITAL<span class="text-[#3D5AFE]">.</span>CO</div><div class="text-[11px] tracking-[0.15em] opacity-60">PREMIUM WEB STUDIO</div></div></div>
+</div>
+<div class="md:col-span-5 card-border p-8">
+<div class="text-[11px] tracking-[0.2em] mb-6">START A PROJECT — 2 MIN FORM</div>
+<form id="form" class="space-y-5"><input id="name" required placeholder="Your Name *" class="w-full border-b-[1.5px] border-black py-3 outline-none text-[14px]"><input id="phone" required placeholder="WhatsApp *" class="w-full border-b-[1.5px] border-black py-3 outline-none text-[14px]"><input id="business" placeholder="Business Name" class="w-full border-b-[1.5px] border-black py-3 outline-none text-[14px]"><select id="package" required class="w-full border-b-[1.5px] border-black py-3 outline-none bg-transparent text-[14px]"><option value="">Select Package *</option><option>Starter - Rs 7,999</option><option>Business - Rs 14,999</option><option>Premium - Rs 24,999+</option></select><textarea id="msg" placeholder="Tell us about your project..." class="w-full border-b-[1.5px] border-black py-3 outline-none h-[80px] text-[14px]"></textarea><button type="submit" class="w-full bg-[#0E0E0E] text-white py-5 text-[12px] font-[700]">SEND ENQUIRY —</button></form>
+<!-- CONTACT US BUTTON REDIRECTS TO YOUR NUMBER -->
+<div class="mt-6 space-y-3">
+<a href="tel:+917020674916" class="block w-full bg-[#3D5AFE] text-white py-5 text-center text-[12px] font-[800] tracking-[0.15em] hover:bg-black transition-colors">📞 CONTACT US — CALL +91 7020674916</a>
+<a href="https://wa.me/917020674916" target="_blank" class="block w-full bg-[#0E0E0E] text-white py-4 text-center text-[11px] font-[700]">💬 WHATSAPP US</a>
+<p class="text-[10px] text-center opacity-40 tracking-[0.1em]">CLICK CONTACT US → REDIRECTS TO YOUR NUMBER</p>
+</div>
+</div>
+</div>
+<div class="mt-20 nav-border pt-8 flex justify-between text-[11px] font-[600]"><span>©2026 VELODIGITAL.CO • velodigital.co@gmail.com</span><span>BUILT FOR GROWTH • 20% OFF LIVE</span></div>
+</section>
 
 <script>
-const lenis=new Lenis({duration:1.4});function raf(t){lenis.raf(t);requestAnimationFrame(raf)}requestAnimationFrame(raf);
-gsap.registerPlugin(ScrollTrigger);lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>{lenis.raf(t*1000)});
-gsap.from(".hero-t",{y:100,opacity:0,duration:1.2,stagger:0.1,ease:"power4.out"});
-document.addEventListener("mousemove",e=>{gsap.to("#cursor",{x:e.clientX,y:e.clientY,duration:1})});
+const lenis = new Lenis({duration:1.6, easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
+function raf(time){lenis.raf(time);requestAnimationFrame(raf)}requestAnimationFrame(raf);
+gsap.registerPlugin(ScrollTrigger); lenis.on('scroll', ScrollTrigger.update);
+gsap.from(".hero-t",{y:130, opacity:0, duration:1.2, stagger:0.12, ease:"power4.out", delay:0.2});
+gsap.utils.toArray(".service-row").forEach(row=>{gsap.fromTo(row,{x:-30,opacity:0},{x:0,opacity:1,duration:0.9,ease:"power3.out",scrollTrigger:{trigger:row,start:"top 88%"}})});
 function selectPkg(v){document.getElementById('package').value=v;document.getElementById('enquiry').scrollIntoView({behavior:'smooth'});}
-document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();let n=document.getElementById('name').value,ph=document.getElementById('phone').value,b=document.getElementById('business').value,pk=document.getElementById('package').value,m=document.getElementById('msg').value;let txt=`Hi Beasty!%0A%0A*NEW ENQUIRY - VELO DIGITAL DAPOLI*%0A%0AName: ${n}%0APhone: ${ph}%0ABusiness: ${b}%0APackage: ${pk}%0AMessage: ${m}%0A%0A20% OFF OFFER`;window.open(`https://wa.me/917020674916?text=${txt}`,'_blank');});
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();let n=document.getElementById('name').value,ph=document.getElementById('phone').value,b=document.getElementById('business').value,pk=document.getElementById('package').value,m=document.getElementById('msg').value;let txt=`Hi! New Enquiry%0AName:${n}%0APhone:${ph}%0ABusiness:${b}%0APackage:${pk}%0AMsg:${m}`;window.open(`https://wa.me/917020674916?text=${txt}`,'_blank');});
 </script>
 </body>
 </html>
